@@ -12,17 +12,17 @@
 </head>
 
 <body>
-  <header>
+  <l-header>
 
-  </header>
+  </l-header>
 
   <main>
 
   </main>
 
-  <footer>
+  <l-footer>
 
-  </footer>
+  </l-footer>
 
 </body>
 
