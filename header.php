@@ -1,4 +1,4 @@
-<l-header>
+<header class="l-header">
     <div class="c-menu-header">
         Menu
     </div>
@@ -10,4 +10,4 @@
         <input type="search" class="search-form__keyword">
         <input type="submit" value="検索" class="search-form__submit">
     </form>
-</l-header>
+</header>

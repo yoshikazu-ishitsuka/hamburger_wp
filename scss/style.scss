@@ -2,17 +2,17 @@
 /*
   foundation
 */
-@use "foundation/reset";
+@use "foundation/_reset";
 @use "foundation/_base";
 
 /*
   layout
 */
 
-@use "layout/footer";
-@use "layout/header";
-@use "layout/main";
-@use "layout/sidebar";
+@use "layout/_footer";
+@use "layout/_header";
+@use "layout/_main";
+@use "layout/_sidebar";
 
 /*
   object

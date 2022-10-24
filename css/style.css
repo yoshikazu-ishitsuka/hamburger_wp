@@ -152,6 +152,37 @@ img {
   vertical-align: bottom;
 }
 
+.l-header {
+  width: 375px;
+  height: 217px;
+  background-color: #fff7ef;
+}
+.l-header .c-menu-header {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+}
+.l-header .c-logo-header {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+}
+.l-header .search-form__keyword {
+  width: 230px;
+  height: 46px;
+}
+.l-header .search-form__submit {
+  width: 78px;
+  height: 46px;
+  color: #707070;
+}
+
+main {
+  height: 2349px;
+  width: 375px;
+  background-color: aliceblue;
+}
+
 /*
   foundation
 */
