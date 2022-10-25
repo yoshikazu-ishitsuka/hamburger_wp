@@ -1,31 +1,59 @@
-$roboto: "Roboto", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$font-mplus1p: "M PLUS 1p", sans-serif;
 $bg-color: #fff7ef;
 $font-color: #707070;
+$radius: 10px;
 
 .l-header {
   width: 375px;
-  height: 217px;
+  // height: 217px;
+  height: 8%;
   background-color: $bg-color;
 
-  .c-menu-header {
+  .c-button-menu {
     font-size: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
     color: $font-color;
+    text-align: right;
+    padding: 14px 16px 0 0;
   }
 
   .c-logo-header {
     font-size: 40px;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-roboto;
+    font-weight: bold;
     color: $font-color;
+    text-align: center;
+    margin-bottom: 38px;
   }
 
-  .search-form__keyword {
-    width: 230px;
-    height: 46px;
-  }
-  .search-form__submit {
-    width: 78px;
-    height: 46px;
-    color: $font-color;
+  .p-search {
+    // width: 85%;
+    padding-bottom: 40px;
+
+    .search-form {
+      display: flex;
+      justify-content: center;
+
+      .search-form__keyword {
+        width: 230px;
+        // width: 61%;
+        height: 46px;
+        border-radius: $radius;
+        border-width: 1px;
+        margin-right: 12px;
+      }
+      .search-form__submit {
+        width: 78px;
+        // width: 20%;
+        height: 46px;
+        font-family: $font-mplus1p;
+        font-weight: bold;
+        color: $font-color;
+        background-color: #f2ede9;
+        border-radius: $radius;
+        border-width: 1px;
+      }
+    }
   }
 }

@@ -1,13 +1,15 @@
 <header class="l-header">
-    <div class="c-menu-header">
+    <h3 class="c-button-menu">
         Menu
-    </div>
-    <div class="c-logo-header">
+    </h3>
+    <h1 class="c-logo-header">
         Hamburger
+    </h1>
+    <div class="p-search">
+        <form class="search-form">
+            <label for="#" class="screen-reader-text"></label>
+            <input type="search" class="search-form__keyword">
+            <input type="submit" value="検索" class="search-form__submit">
+        </form>
     </div>
-    <form class="search-form">
-        <label for="#" class="screen-reader-text"></label>
-        <input type="search" class="search-form__keyword">
-        <input type="submit" value="検索" class="search-form__submit">
-    </form>
 </header>
