@@ -157,6 +157,11 @@ img {
   height: 8%;
   background-color: #fff7ef;
 }
+@media (max-width: 425px) {
+  .l-header {
+    width: 100%;
+  }
+}
 .l-header .c-button-menu {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -178,16 +183,18 @@ img {
 .l-header .p-search .search-form {
   display: flex;
   justify-content: center;
+  width: 85%;
 }
 .l-header .p-search .search-form .search-form__keyword {
-  width: 230px;
+  width: 61%;
   height: 46px;
   border-radius: 10px;
   border-width: 1px;
   margin-right: 12px;
+  font-family: FontAwesome;
 }
 .l-header .p-search .search-form .search-form__submit {
-  width: 78px;
+  width: 20%;
   height: 46px;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: bold;
