@@ -19,7 +19,12 @@
 */
 
 // Component
+@use "object/component/background";
+@use "object/component/button";
+@use "object/component/color";
+@use "object/component/font";
 
 // Project
+@use "object/project/project";
 
 // Utility

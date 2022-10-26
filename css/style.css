@@ -155,25 +155,16 @@ img {
 .l-header {
   width: 375px;
   height: 8%;
-  background-color: #fff7ef;
 }
 @media (max-width: 425px) {
   .l-header {
     width: 100%;
   }
 }
-.l-header .c-button-menu {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  text-align: right;
-  padding: 14px 16px 0 0;
-}
 .l-header .c-logo-header {
   font-size: 40px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: #707070;
   text-align: center;
   margin-bottom: 38px;
 }
@@ -198,7 +189,6 @@ img {
   height: 46px;
   font-family: "M PLUS 1p", sans-serif;
   font-weight: bold;
-  color: #707070;
   background-color: #f2ede9;
   border-radius: 10px;
   border-width: 1px;
@@ -208,6 +198,33 @@ main {
   height: 2349px;
   width: 375px;
   background-color: aliceblue;
+}
+
+.c-background-color--base {
+  background-color: #fff7ef;
+}
+
+.c-button--menu {
+  font-size: 20px;
+  color: #707070;
+}
+
+.c-font-color--base {
+  color: #707070;
+}
+.c-font-weight--bold {
+  font-weight: bold;
+}
+.c-font-family--robot {
+  font-family: "Roboto", sans-serif;
+}
+.c-font-family--mplus1 {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.p-button-menu .c-button--menu {
+  text-align: right;
+  padding: 14px 16px 0 0;
 }
 
 /*

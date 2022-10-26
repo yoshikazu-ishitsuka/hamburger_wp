@@ -1,7 +1,7 @@
 $font-roboto: "Roboto", sans-serif;
 $font-mplus1p: "M PLUS 1p", sans-serif;
-$bg-color: #fff7ef;
-$font-color: #707070;
+// $bg-color: #fff7ef;
+// $font-color: #707070;
 $radius: 10px;
 
 .l-header {
@@ -12,21 +12,20 @@ $radius: 10px;
   width: 375px;
   height: 8%;
   // height: 217px;
-  background-color: $bg-color;
 
-  .c-button-menu {
-    font-size: 20px;
-    font-family: $font-roboto;
-    color: $font-color;
-    text-align: right;
-    padding: 14px 16px 0 0;
-  }
+  // .c-button-menu {
+  //   font-size: 20px;
+  //   // font-family: $font-roboto;
+  //   // color: $font-color;
+  //   text-align: right;
+  //   padding: 14px 16px 0 0;
+  // }
 
   .c-logo-header {
     font-size: 40px;
     font-family: $font-roboto;
     font-weight: bold;
-    color: $font-color;
+    // color: $font-color;
     text-align: center;
     margin-bottom: 38px;
   }
@@ -55,7 +54,7 @@ $radius: 10px;
         height: 46px;
         font-family: $font-mplus1p;
         font-weight: bold;
-        color: $font-color;
+        // color: $font-color;
         background-color: #f2ede9;
         border-radius: $radius;
         border-width: 1px;

@@ -1,0 +1,22 @@
+.c-font {
+  &-color {
+    &--base {
+      color: #707070;
+    }
+  }
+
+  &-weight {
+    &--bold {
+      font-weight: bold;
+    }
+  }
+
+  &-family {
+    &--robot {
+      font-family: "Roboto", sans-serif;
+    }
+    &--mplus1 {
+      font-family: "M PLUS 1p", sans-serif;
+    }
+  }
+}
