@@ -163,7 +163,6 @@ img {
 }
 .l-header .c-logo-header {
   font-size: 40px;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 38px;
@@ -176,7 +175,7 @@ img {
   justify-content: center;
   width: 85%;
 }
-.l-header .p-search .search-form .search-form__keyword {
+.l-header .p-search .search-form .c-search-form__keyword {
   width: 61%;
   height: 46px;
   border-radius: 10px;
@@ -184,10 +183,9 @@ img {
   margin-right: 12px;
   font-family: FontAwesome;
 }
-.l-header .p-search .search-form .search-form__submit {
+.l-header .p-search .search-form .c-search-form__submit {
   width: 20%;
   height: 46px;
-  font-family: "M PLUS 1p", sans-serif;
   font-weight: bold;
   background-color: #f2ede9;
   border-radius: 10px;
@@ -204,7 +202,9 @@ main {
   background-color: #fff7ef;
 }
 
-.c-button--menu {
+.c-button-menu {
+  text-align: right;
+  padding: 14px 16px 0 0;
   font-size: 20px;
   color: #707070;
 }
@@ -222,18 +222,12 @@ main {
   font-family: "M PLUS 1p", sans-serif;
 }
 
-.p-button-menu .c-button--menu {
+.p-button-menu .c-button-menu {
   text-align: right;
   padding: 14px 16px 0 0;
 }
 
-/*
-  foundation
-*/
-/*
-  layout
-*/
-/*
-  object
-*/
+/* foundation */
+/* layout */
+/* object */
 /*# sourceMappingURL=style.css.map */

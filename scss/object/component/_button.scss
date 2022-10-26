@@ -1,7 +1,9 @@
+@use "../../foundation/mixin";
+
 .c-button {
-  &--menu {
-    font-size: 20px;
-    // font-family: $font-roboto;
-    color: #707070;
+  &-menu {
+    text-align: right;
+    padding: 14px 16px 0 0;
+    @include mixin.menu-btn(20px, #707070);
   }
 }

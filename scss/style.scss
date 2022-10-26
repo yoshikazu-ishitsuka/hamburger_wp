@@ -1,22 +1,17 @@
-@charset "utf-8";
-/*
-  foundation
-*/
-@use "foundation/_reset";
-@use "foundation/_base";
+@charset "UTF-8";
 
-/*
-  layout
-*/
+/* foundation */
+@use "foundation/reset";
+@use "foundation/base";
+@use "foundation/mixin";
 
-@use "layout/_footer";
-@use "layout/_header";
-@use "layout/_main";
-@use "layout/_sidebar";
+/* layout */
+@use "layout/footer";
+@use "layout/header";
+@use "layout/main";
+@use "layout/sidebar";
 
-/*
-  object
-*/
+/* object */
 
 // Component
 @use "object/component/background";

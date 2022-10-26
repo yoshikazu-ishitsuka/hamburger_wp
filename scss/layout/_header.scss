@@ -1,7 +1,3 @@
-$font-roboto: "Roboto", sans-serif;
-$font-mplus1p: "M PLUS 1p", sans-serif;
-// $bg-color: #fff7ef;
-// $font-color: #707070;
 $radius: 10px;
 
 .l-header {
@@ -13,17 +9,9 @@ $radius: 10px;
   height: 8%;
   // height: 217px;
 
-  // .c-button-menu {
-  //   font-size: 20px;
-  //   // font-family: $font-roboto;
-  //   // color: $font-color;
-  //   text-align: right;
-  //   padding: 14px 16px 0 0;
-  // }
-
   .c-logo-header {
-    font-size: 40px;
-    font-family: $font-roboto;
+    font-size: 50px;
+    // font-family: $font-roboto;
     font-weight: bold;
     // color: $font-color;
     text-align: center;
@@ -39,7 +27,7 @@ $radius: 10px;
       justify-content: center;
       width: 85%;
 
-      .search-form__keyword {
+      .c-search-form__keyword {
         // width: 230px;
         width: 61%;
         height: 46px;
@@ -48,11 +36,11 @@ $radius: 10px;
         margin-right: 12px;
         font-family: FontAwesome;
       }
-      .search-form__submit {
+      .c-search-form__submit {
         // width: 78px;
         width: 20%;
         height: 46px;
-        font-family: $font-mplus1p;
+        // font-family: $font-mplus1p;
         font-weight: bold;
         // color: $font-color;
         background-color: #f2ede9;
