@@ -9,13 +9,16 @@ $radius: 10px;
   height: 8%;
   // height: 217px;
 
-  .c-logo-header {
-    font-size: 50px;
-    // font-family: $font-roboto;
-    font-weight: bold;
-    // color: $font-color;
+  .c-logo__header {
+    font-size: 40px;
     text-align: center;
     margin-bottom: 38px;
+
+    // .fa-magnifying-glass::before {
+    //   font-family: "Font Awesome 5 Free";
+    //   font-weight: 900;
+    //   content: "\f002";
+    // }
   }
 
   .p-search {
@@ -25,24 +28,32 @@ $radius: 10px;
     .search-form {
       display: flex;
       justify-content: center;
-      width: 85%;
+      width: 320px;
+      margin-left: 24px;
+      // width: 100%;
 
       .c-search-form__keyword {
-        // width: 230px;
-        width: 61%;
+        width: 230px;
+        // position: relative;
+        // left: 6.4%;
+        // width: 61%;
         height: 46px;
         border-radius: $radius;
         border-width: 1px;
         margin-right: 12px;
-        font-family: FontAwesome;
       }
+
+      .fa-magnifying-glass-icon {
+        font-weight: 900;
+        // font-family: FontAwesome;
+        font-family: "Font Awesome 5 Free";
+      }
+
       .c-search-form__submit {
-        // width: 78px;
-        width: 20%;
+        width: 78px;
+        // width: 24%;
         height: 46px;
-        // font-family: $font-mplus1p;
         font-weight: bold;
-        // color: $font-color;
         background-color: #f2ede9;
         border-radius: $radius;
         border-width: 1px;

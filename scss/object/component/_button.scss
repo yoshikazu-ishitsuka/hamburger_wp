@@ -1,7 +1,7 @@
 @use "../../foundation/mixin";
 
 .c-button {
-  &-menu {
+  &--menu {
     text-align: right;
     padding: 14px 16px 0 0;
     @include mixin.menu-btn(20px, #707070);
