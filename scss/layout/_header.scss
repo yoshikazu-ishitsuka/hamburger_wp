@@ -1,4 +1,4 @@
-$radius: 10px;
+// $radius: 10px;
 
 .l-header {
   @media (max-width: 425px) {
@@ -7,55 +7,46 @@ $radius: 10px;
 
   width: 375px;
   height: 8%;
-  // height: 217px;
 
   .c-logo__header {
     font-size: 40px;
     text-align: center;
     margin-bottom: 38px;
-
-    // .fa-magnifying-glass::before {
-    //   font-family: "Font Awesome 5 Free";
-    //   font-weight: 900;
-    //   content: "\f002";
-    // }
   }
 
   .p-search {
-    // width: 85%;
     padding-bottom: 40px;
 
-    .search-form {
+    .c-search-form {
       display: flex;
       justify-content: center;
       width: 320px;
+      max-width: 100%;
       margin-left: 24px;
-      // width: 100%;
 
-      .c-search-form__keyword {
+      .c-search-form--keyword {
         width: 230px;
-        // position: relative;
-        // left: 6.4%;
-        // width: 61%;
         height: 46px;
-        border-radius: $radius;
+        // border-radius: $radius;
         border-width: 1px;
         margin-right: 12px;
+
+        &:focus {
+          background-image: none;
+        }
       }
 
-      .fa-magnifying-glass-icon {
-        font-weight: 900;
-        // font-family: FontAwesome;
-        font-family: "Font Awesome 5 Free";
+      .c-icon--magnifying-glass {
+        font-size: 24px;
+        background-position: 16px 11px;
       }
 
-      .c-search-form__submit {
+      .c-search-form--submit {
         width: 78px;
-        // width: 24%;
         height: 46px;
         font-weight: bold;
         background-color: #f2ede9;
-        border-radius: $radius;
+        // border-radius: $radius;
         border-width: 1px;
       }
     }
