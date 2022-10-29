@@ -1,4 +1,4 @@
-// $radius: 10px;
+@use "../foundation/variables";
 
 .l-header {
   @media (max-width: 425px) {
@@ -17,21 +17,25 @@
   .p-search {
     padding-bottom: 40px;
 
-    .c-search-form {
+    .c-form-search {
       display: flex;
       justify-content: center;
       width: 320px;
       max-width: 100%;
       margin-left: 24px;
 
-      .c-search-form--keyword {
+      .c-form-search--keyword {
         width: 230px;
         height: 46px;
-        // border-radius: $radius;
+        border-radius: variables.$radius;
         border-width: 1px;
         margin-right: 12px;
 
         &:focus {
+          background-image: none;
+        }
+
+        &:not(:placeholder-shown) {
           background-image: none;
         }
       }
@@ -41,13 +45,14 @@
         background-position: 16px 11px;
       }
 
-      .c-search-form--submit {
+      .c-form-search--submit {
         width: 78px;
         height: 46px;
         font-weight: bold;
         background-color: #f2ede9;
-        // border-radius: $radius;
+        border-radius: variables.$radius;
         border-width: 1px;
+        border-color: #707070;
       }
     }
   }
