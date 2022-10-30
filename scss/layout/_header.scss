@@ -21,6 +21,7 @@
   .c-button--menu {
     margin-top: 14px;
     margin-right: 16px;
+    // わかりやすいように一時的に背景色をつけてます
     background-color: rgb(193, 153, 229);
     @include g.btn-menu(20px, #707070);
   }
