@@ -1,9 +1,12 @@
-@use "../../foundation/mixin";
+@use "../../foundation/global" as g;
+// @use "../../foundation/mixin";
 
-.c-button {
-  &--menu {
-    text-align: right;
-    padding: 14px 16px 0 0;
-    @include mixin.menu-btn(20px, #707070);
-  }
-}
+// .c-button {
+//   &--menu {
+//     // text-align: right;
+//     margin-top: 14px;
+//     margin-right: 16px;
+//     background-color: blueviolet;
+//     @include g.btn-menu(20px, #707070);
+//   }
+// }
