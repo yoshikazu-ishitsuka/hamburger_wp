@@ -1,7 +1,8 @@
 // _global.scssの読み込み
 @use "../../foundation/global" as g;
 
-.c-icon {
+// 虫眼鏡
+.c-img {
   &--magnifying-glass {
     background-image: url(/images/common/search.png);
     background-repeat: no-repeat;
