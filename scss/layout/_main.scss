@@ -1,5 +1,16 @@
-main {
+.l-main {
   height: 2349px;
   width: 375px;
-  background-color: aliceblue;
+  background-color: #fffdfa;
+
+  .main-visual {
+    background-image: url(/images/front/main-visual-sp.png);
+    background-size: cover;
+    height: 285px;
+
+    &__title {
+      font-size: 36px;
+      padding: 119px 134px 115px 25px;
+    }
+  }
 }
