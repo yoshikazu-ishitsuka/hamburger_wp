@@ -13,4 +13,18 @@
       padding: 119px 134px 115px 25px;
     }
   }
+
+  .sub-content {
+    list-style: none;
+
+    .sub-visual__takeout {
+      background-image: url(/images/front/burger-01-sp.png);
+      height: 642px;
+      background-position: center;
+    }
+    .sub-visual__eatin {
+      background-image: url(/images/front/burger-02-sp.png);
+      height: 643px;
+    }
+  }
 }
