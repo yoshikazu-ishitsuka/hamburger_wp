@@ -18,28 +18,41 @@
   .sub-visual {
     list-style: none;
 
-    .sub-visual__takeOut {
+    &__takeOut {
       background-image: url(/images/front/burger-01-sp.png);
       background-repeat: no-repeat;
       background-position: center;
       height: 642px;
       margin: 0 20px 20px;
 
-      .sub-visual__takeOut__title {
+      &__title {
         font-size: 41px;
         margin-right: 157px;
         margin-left: 15px;
         padding-top: 11px;
+
+        &::after {
+          content: "";
+          width: 33.89px;
+          height: 4px;
+          display: inline-block;
+          background-color: #ffffff;
+          font-weight: bold;
+          // margin-left: 15.5px;
+          position: relative;
+          bottom: 35px;
+        }
       }
 
-      &::after {
-        content: "";
-        width: 33.89px;
-        height: 4px;
-        display: inline-block;
-        background-color: #ffffff;
-        font-weight: bold;
-        margin-left: 15.5px;
+      .p-sub-visual__sentence {
+        // margin: 364px 15px 15px 15px;
+
+        &__inner {
+          margin: 0 10px;
+        }
+        &-title {
+          padding-top: 7px;
+        }
       }
     }
 
@@ -56,16 +69,18 @@
         margin-right: 218px;
         margin-left: 13px;
         padding-top: 11px;
-      }
 
-      &::after {
-        content: "";
-        width: 33.89px;
-        height: 4px;
-        display: inline-block;
-        background-color: #ffffff;
-        font-weight: bold;
-        margin-left: 15.5px;
+        &::after {
+          content: "";
+          width: 33.89px;
+          height: 4px;
+          display: inline-block;
+          background-color: #ffffff;
+          font-weight: bold;
+          // margin-left: 15.5px;
+          position: relative;
+          bottom: 35px;
+        }
       }
     }
   }
