@@ -1,0 +1,33 @@
+// _global.scssの読み込み
+@use "../../foundation/global" as g;
+
+.c-title {
+  &--main {
+    font-size: 36px;
+  }
+
+  &--sub {
+    font-size: 41px;
+    margin-right: 157px;
+    margin-left: 15px;
+    padding-top: 11px;
+  }
+
+  &--sentence {
+    font-size: 22px;
+  }
+
+  &--underline {
+    &::after {
+      content: "";
+      width: 33.89px;
+      height: 4px;
+      display: inline-block;
+      background-color: #ffffff;
+      font-weight: bold;
+      // margin-left: 15.5px;
+      position: relative;
+      bottom: 35px;
+    }
+  }
+}

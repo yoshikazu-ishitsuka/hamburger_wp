@@ -1,4 +1,5 @@
-// @use "../../foundation/variables";
+// _global.scssの読み込み
+@use "../../foundation/global" as g;
 
 // .c-form-search {
 //   &--keyword {

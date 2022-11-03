@@ -1,61 +1,38 @@
+// メインビジュアル
 .l-main {
   height: 2349px;
   width: 375px;
   background-color: #fffdfa;
 
-  .main-visual {
-    background-image: url(/images/front/main-visual-sp.png);
-    background-size: cover;
-    height: 285px;
-    margin-bottom: 20px;
-
-    &__title {
-      font-size: 36px;
+  .p-visual--main {
+    .c-title--main {
+      // font-size: 36px;
       padding: 119px 134px 115px 25px;
     }
   }
 
-  .sub-visual {
+  // サブビジュアル
+  .p-visual--sub {
     list-style: none;
 
-    &__takeOut {
-      background-image: url(/images/front/burger-01-sp.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 642px;
-      margin: 0 20px 20px;
+    // テイクアウト
+    &--takeOut {
+      // 2つの文章ブロックを内包
+      .sub-section {
+        margin-top: 65%;
 
-      &__title {
-        font-size: 41px;
-        margin-right: 157px;
-        margin-left: 15px;
-        padding-top: 11px;
-
-        &::after {
-          content: "";
-          width: 33.89px;
-          height: 4px;
-          display: inline-block;
-          background-color: #ffffff;
-          font-weight: bold;
-          // margin-left: 15.5px;
-          position: relative;
-          bottom: 35px;
-        }
-      }
-
-      .p-sub-visual__sentence {
-        // margin: 364px 15px 15px 15px;
-
-        &__inner {
-          margin: 0 10px;
-        }
-        &-title {
+        .c-title--sentence {
           padding-top: 7px;
         }
       }
     }
 
+    &--sentence {
+      margin-bottom: 15px;
+      padding: 0 10px;
+    }
+
+    // イートイン
     .sub-visual__eatIn {
       background-image: url(/images/front/burger-02-sp.png);
       background-repeat: no-repeat;

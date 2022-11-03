@@ -142,49 +142,23 @@ ul {
   width: 375px;
   background-color: #fffdfa;
 }
-.l-main .main-visual {
-  background-image: url(/images/front/main-visual-sp.png);
-  background-size: cover;
-  height: 285px;
-  margin-bottom: 20px;
-}
-.l-main .main-visual__title {
-  font-size: 36px;
+.l-main .p-visual--main .c-title--main {
   padding: 119px 134px 115px 25px;
 }
-.l-main .sub-visual {
+.l-main .p-visual--sub {
   list-style: none;
 }
-.l-main .sub-visual__takeOut {
-  background-image: url(/images/front/burger-01-sp.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 642px;
-  margin: 0 20px 20px;
+.l-main .p-visual--sub--takeOut .sub-section {
+  margin-top: 65%;
 }
-.l-main .sub-visual__takeOut__title {
-  font-size: 41px;
-  margin-right: 157px;
-  margin-left: 15px;
-  padding-top: 11px;
-}
-.l-main .sub-visual__takeOut__title::after {
-  content: "";
-  width: 33.89px;
-  height: 4px;
-  display: inline-block;
-  background-color: #ffffff;
-  font-weight: bold;
-  position: relative;
-  bottom: 35px;
-}
-.l-main .sub-visual__takeOut .p-sub-visual__sentence__inner {
-  margin: 0 10px;
-}
-.l-main .sub-visual__takeOut .p-sub-visual__sentence-title {
+.l-main .p-visual--sub--takeOut .sub-section .c-title--sentence {
   padding-top: 7px;
 }
-.l-main .sub-visual .sub-visual__eatIn {
+.l-main .p-visual--sub--sentence {
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+.l-main .p-visual--sub .sub-visual__eatIn {
   background-image: url(/images/front/burger-02-sp.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -192,13 +166,13 @@ ul {
   width: 336px;
   margin: 0 20px 49px 19px;
 }
-.l-main .sub-visual .sub-visual__eatIn .sub-visual__eatIn__title {
+.l-main .p-visual--sub .sub-visual__eatIn .sub-visual__eatIn__title {
   font-size: 41px;
   margin-right: 218px;
   margin-left: 13px;
   padding-top: 11px;
 }
-.l-main .sub-visual .sub-visual__eatIn .sub-visual__eatIn__title::after {
+.l-main .p-visual--sub .sub-visual__eatIn .sub-visual__eatIn__title::after {
   content: "";
   width: 33.89px;
   height: 4px;
@@ -218,6 +192,15 @@ ul {
 
 .c-font-color--base {
   color: #707070;
+}
+.c-font-color--white {
+  color: #ffffff;
+}
+.c-font-color--ea {
+  color: #eaeaea;
+}
+.c-font-color--3c {
+  color: #3c2a10;
 }
 .c-font-weight--bold {
   font-weight: bold;
@@ -241,19 +224,52 @@ ul {
   display: flex;
 }
 
-.c-color--white {
-  color: #ffffff;
+.c-title--main {
+  font-size: 36px;
 }
-.c-color--ea {
-  color: #eaeaea;
+.c-title--sub {
+  font-size: 41px;
+  margin-right: 157px;
+  margin-left: 15px;
+  padding-top: 11px;
+}
+.c-title--sentence {
+  font-size: 22px;
+}
+.c-title--underline::after {
+  content: "";
+  width: 33.89px;
+  height: 4px;
+  display: inline-block;
+  background-color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  bottom: 35px;
 }
 
-.p-sub-visual__sentence {
+.c-text--sub {
+  font-size: 16px;
+}
+
+.p-visual--main {
+  background-image: url(/images/front/main-visual-sp.png);
+  background-size: cover;
+  height: 285px;
+  margin-bottom: 20px;
+}
+.p-visual--sub--takeOut {
+  background-image: url(/images/front/burger-01-sp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 642px;
+  margin: 0 20px 20px;
+}
+.p-visual--sub--sentence {
   width: 305px;
   height: 124px;
   opacity: 0.8;
+  margin: 0 10px;
 }
-
 /* foundation */
 /* layout */
 /* object */
