@@ -6,7 +6,6 @@
 
   .p-visual--main {
     .c-title--main {
-      // font-size: 36px;
       padding: 119px 134px 115px 25px;
     }
   }
@@ -27,38 +26,28 @@
       }
     }
 
+    // イートイン
+    &--eatIn {
+      // 2つの文章ブロックを内包
+      .sub-section {
+        margin-top: 85%;
+
+        .c-title--sentence {
+          padding-top: 7px;
+        }
+      }
+
+      > .c-title--underline {
+        &::after {
+          bottom: -2rem;
+          left: -7rem;
+        }
+      }
+    }
+
     &--sentence {
       margin-bottom: 15px;
       padding: 0 10px;
-    }
-
-    // イートイン
-    .sub-visual__eatIn {
-      background-image: url(/images/front/burger-02-sp.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 643px;
-      width: 336px;
-      margin: 0 20px 49px 19px;
-
-      .sub-visual__eatIn__title {
-        font-size: 41px;
-        margin-right: 218px;
-        margin-left: 13px;
-        padding-top: 11px;
-
-        &::after {
-          content: "";
-          width: 33.89px;
-          height: 4px;
-          display: inline-block;
-          background-color: #ffffff;
-          font-weight: bold;
-          // margin-left: 15.5px;
-          position: relative;
-          bottom: 35px;
-        }
-      }
     }
   }
 }

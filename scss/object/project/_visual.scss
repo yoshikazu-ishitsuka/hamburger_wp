@@ -1,3 +1,4 @@
+// main内の画像関連についての設定
 .p-visual {
   &--main {
     background-image: url(/images/front/main-visual-sp.png);
@@ -23,6 +24,12 @@
     }
 
     &--eatIn {
+      background-image: url(/images/front/burger-02-sp.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 643px;
+      width: 336px;
+      margin: 0 20px 49px 19px;
     }
   }
 }
