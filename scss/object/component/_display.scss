@@ -1,0 +1,8 @@
+// _global.scssの読み込み
+@use "../../foundation/global" as g;
+
+.c-display {
+  &--inline-b {
+    display: inline-block;
+  }
+}

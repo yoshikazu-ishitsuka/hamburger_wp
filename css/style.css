@@ -237,6 +237,10 @@ ul {
   font-size: 16px;
 }
 
+.c-display--inline-b {
+  display: inline-block;
+}
+
 .p-visual--main {
   background-image: url(/images/front/main-visual-sp.png);
   background-size: cover;
@@ -255,6 +259,8 @@ ul {
   height: 124px;
   opacity: 0.8;
   margin: 0 10px;
+  display: inline-block;
+  height: auto;
 }
 .p-visual--sub--eatIn {
   background-image: url(/images/front/burger-02-sp.png);
@@ -271,6 +277,23 @@ ul {
   background-position: center;
   height: 691px;
   width: 375px;
+  position: relative;
+  z-index: 2;
+}
+.p-map--top {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 375px;
+  height: 415px;
+  position: absolute;
+  z-index: 3;
+}
+.p-map--outer {
+  background-color: #000000;
+  opacity: 0.2;
+  width: 375px;
+  height: 691px;
+  position: absolute;
+  z-index: 1;
 }
 
 /* foundation */
