@@ -16,21 +16,18 @@
 
     // テイクアウト
     &--takeOut {
-      // 2つの文章ブロックを内包
-      .sub-section {
-        margin-top: 65%;
+      position: relative;
 
-        .c-title--sentence {
-          padding-top: 7px;
-        }
+      .c-title--sub {
+        margin-right: 40%;
+        margin-left: 15px;
+        padding-top: 11px;
       }
-    }
 
-    // イートイン
-    &--eatIn {
       // 2つの文章ブロックを内包
       .sub-section {
-        margin-top: 85%;
+        position: absolute;
+        bottom: 0;
 
         .c-title--sentence {
           padding-top: 7px;
@@ -39,6 +36,36 @@
 
       > .c-title--underline {
         &::after {
+          width: 33.89px;
+          height: 4px;
+          bottom: 2rem;
+        }
+      }
+    }
+
+    // イートイン
+    &--eatIn {
+      position: relative;
+
+      .c-title--sub {
+        margin-left: 15px;
+        padding-top: 11px;
+      }
+
+      // 2つの文章ブロックを内包
+      .sub-section {
+        position: absolute;
+        bottom: 0;
+
+        .c-title--sentence {
+          padding-top: 7px;
+        }
+      }
+
+      > .c-title--underline {
+        &::after {
+          width: 33.89px;
+          height: 4px;
           bottom: -2rem;
           left: -7rem;
         }
@@ -49,5 +76,57 @@
       margin-bottom: 15px;
       padding: 0 10px;
     }
+  }
+
+  // マップ関連
+  .p-map {
+    position: relative;
+
+    // マップ全体を覆う部分
+    // .c-background--overlay {
+    //   &::after {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     // top: 0;
+    //   }
+    // }
+
+    &--top {
+      .c-title {
+        &--map {
+          margin-top: 2rem;
+          margin-left: 2.5rem;
+        }
+
+        > &--underline {
+          &::after {
+            width: 4.5rem;
+            height: 2px;
+            bottom: -2rem;
+            left: -15rem;
+          }
+        }
+      }
+
+      .c-text--map {
+        width: 295px;
+        height: 518px;
+        margin: 0 40px;
+        margin-top: 2.5rem;
+      }
+    }
+  }
+
+  // マップ全体を覆う部分
+  .c-background--overlay {
+    &::after {
+      // top: 0;
+    }
+  }
+
+  .c-text--map {
+    // position: absolute;
+    // z-index: 3;
   }
 }

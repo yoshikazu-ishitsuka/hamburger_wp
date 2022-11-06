@@ -37,7 +37,7 @@
         width: 230px;
         height: 46px;
         border-radius: g.$radius;
-        border-width: g.$bd-width;
+        border-width: g.$bd_width;
         margin-right: 12px;
 
         &:focus {
@@ -59,7 +59,7 @@
         height: 46px;
         background-color: #f2ede9;
         border-radius: g.$radius;
-        border-width: g.$bd-width;
+        border-width: g.$bd_width;
       }
     }
   }

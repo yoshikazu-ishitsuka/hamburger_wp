@@ -5,4 +5,13 @@
   &--sub {
     font-size: 16px;
   }
+
+  &--map {
+    font-size: 14px;
+    color: g.$color_white;
+    line-height: 2rem;
+    display: inline-block;
+    height: auto;
+    position: absolute;
+  }
 }
