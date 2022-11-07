@@ -11,12 +11,26 @@
       background-color: #fff;
     }
   }
+
+  &--map {
+    background-image: url(/images/front/map-sp-full.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    // height: 691px;
+    // width: 375px;
+    // position: relative;
+    // z-index: 3;
+    // opacity: 0.5;
+  }
+
+  // マップ全体を覆う部分
   &--overlay {
     &::after {
       content: "";
       display: block;
       background-color: #000;
       position: absolute;
+      top: 0;
       width: 100%;
       height: 100%;
       opacity: 0.3;

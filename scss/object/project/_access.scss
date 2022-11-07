@@ -1,0 +1,41 @@
+// main内の地図関連の設定
+.p-access {
+  // height: 691px;
+
+  .c-background--map {
+    background-size: cover;
+    display: inline-block;
+    // height: 691px;
+    height: auto;
+  }
+  &--map {
+    .c-title {
+      &--access {
+        padding-top: 2rem;
+        margin-left: 2.5rem;
+      }
+      &--underline {
+        &::after {
+          width: 4.5rem;
+          height: 2px;
+          bottom: -2rem;
+          left: -15rem;
+          background-color: black;
+        }
+      }
+    }
+
+    .c-text--access {
+      // top: 6.5rem;
+      // left: 2.5rem;
+      // height: auto;
+      // position: absolute;
+      // width: 295px;
+      // height: 518px;
+      display: inline-block;
+      height: auto;
+      line-height: 2rem;
+      margin: 2.5rem 40px 2.5rem 40px;
+    }
+  }
+}

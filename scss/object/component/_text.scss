@@ -6,12 +6,9 @@
     font-size: 16px;
   }
 
-  &--map {
+  &--access {
     font-size: 14px;
-    color: g.$color_white;
-    line-height: 2rem;
+    // color: g.$color_white;
     display: inline-block;
-    height: auto;
-    position: absolute;
   }
 }

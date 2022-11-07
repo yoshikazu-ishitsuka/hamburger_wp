@@ -34,6 +34,7 @@
         }
       }
 
+      // Take out下の白線
       > .c-title--underline {
         &::after {
           width: 33.89px;
@@ -62,6 +63,7 @@
         }
       }
 
+      // Eat In下の白線
       > .c-title--underline {
         &::after {
           width: 33.89px;
@@ -79,54 +81,13 @@
   }
 
   // マップ関連
-  .p-map {
+  .p-access {
     position: relative;
 
-    // マップ全体を覆う部分
-    // .c-background--overlay {
-    //   &::after {
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
-    //     // top: 0;
-    //   }
-    // }
-
-    &--top {
-      .c-title {
-        &--map {
-          margin-top: 2rem;
-          margin-left: 2.5rem;
-        }
-
-        > &--underline {
-          &::after {
-            width: 4.5rem;
-            height: 2px;
-            bottom: -2rem;
-            left: -15rem;
-          }
-        }
-      }
-
-      .c-text--map {
-        width: 295px;
-        height: 518px;
-        margin: 0 40px;
-        margin-top: 2.5rem;
-      }
+    .c-background--map {
+      // height: auto;
+      // height: 691px;
+      width: 375px;
     }
-  }
-
-  // マップ全体を覆う部分
-  .c-background--overlay {
-    &::after {
-      // top: 0;
-    }
-  }
-
-  .c-text--map {
-    // position: absolute;
-    // z-index: 3;
   }
 }
