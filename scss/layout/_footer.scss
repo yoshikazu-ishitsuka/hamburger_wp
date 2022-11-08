@@ -1,0 +1,19 @@
+// _global.scssの読み込み
+@use "../foundation/global" as g;
+
+.l-footer {
+  text-align: center;
+  &--menu {
+    justify-content: center;
+    padding: 40px 62px 0 63px;
+  }
+  .c-text--copy-right {
+    display: inline-block;
+    margin-top: 34px;
+    margin-bottom: 30px;
+  }
+}
+.c-background--footer {
+  width: 375px;
+  height: 9.375rem;
+}

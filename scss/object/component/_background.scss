@@ -18,7 +18,7 @@
     background-position: center;
   }
 
-  // マップ全体を覆う部分
+  // 要素の全体を暗い透過で覆う部分
   &--overlay {
     &::after {
       content: "";
@@ -29,5 +29,9 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.3);
     }
+  }
+
+  &--footer {
+    background-image: url(/images/common/footer.png);
   }
 }

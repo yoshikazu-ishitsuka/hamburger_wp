@@ -11,4 +11,10 @@
     color: g.$color_white;
     display: inline-block;
   }
+
+  &--copy-right {
+    font-size: 14px;
+    color: g.$color_white;
+    text-align: center;
+  }
 }

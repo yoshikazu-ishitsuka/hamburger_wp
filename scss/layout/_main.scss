@@ -1,3 +1,6 @@
+// _global.scssの読み込み
+@use "../foundation/global" as g;
+
 // メインビジュアル
 .l-main {
   height: 2349px;
@@ -85,7 +88,8 @@
     position: relative;
 
     .c-background--map {
-      // width: 375px;(24rem)
+      width: 375px;
+      // 24rem
 
       .c-title--access {
         position: inherit;
