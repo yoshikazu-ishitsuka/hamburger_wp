@@ -85,9 +85,16 @@
     position: relative;
 
     .c-background--map {
-      // height: auto;
-      // height: 691px;
-      width: 375px;
+      // width: 375px;(24rem)
+
+      .c-title--access {
+        position: inherit;
+        z-index: 3;
+      }
+
+      .c-title--underline {
+        position: inherit;
+      }
     }
   }
 }

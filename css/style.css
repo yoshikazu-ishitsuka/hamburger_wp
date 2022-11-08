@@ -197,8 +197,12 @@ ul {
 .l-main .p-access {
   position: relative;
 }
-.l-main .p-access .c-background--map {
-  width: 375px;
+.l-main .p-access .c-background--map .c-title--access {
+  position: inherit;
+  z-index: 3;
+}
+.l-main .p-access .c-background--map .c-title--underline {
+  position: inherit;
 }
 
 .c-background-color--base {
@@ -215,12 +219,11 @@ ul {
 .c-background--overlay::after {
   content: "";
   display: block;
-  background-color: #000;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .c-font-color--base {
@@ -275,6 +278,7 @@ ul {
 }
 .c-title--access {
   font-size: 30px;
+  color: #ffffff;
 }
 
 .c-text--sub {
@@ -282,6 +286,7 @@ ul {
 }
 .c-text--access {
   font-size: 14px;
+  color: #ffffff;
   display: inline-block;
 }
 
@@ -323,6 +328,18 @@ ul {
   background-size: cover;
   display: inline-block;
   height: auto;
+  min-height: 691px;
+  position: relative;
+  z-index: 1;
+}
+.p-access--map::before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60%;
 }
 .p-access--map .c-title--access {
   padding-top: 2rem;
@@ -333,13 +350,15 @@ ul {
   height: 2px;
   bottom: -2rem;
   left: -15rem;
-  background-color: black;
+  background-color: #ffffff;
 }
 .p-access--map .c-text--access {
   display: inline-block;
   height: auto;
   line-height: 2rem;
   margin: 2.5rem 40px 2.5rem 40px;
+  position: inherit;
+  z-index: 3;
 }
 
 /* foundation */
