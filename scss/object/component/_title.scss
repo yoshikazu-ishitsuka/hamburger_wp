@@ -24,8 +24,22 @@
     }
   }
 
+  &--vertical-line {
+    &::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      background-color: #fff;
+    }
+  }
+
   &--access {
     font-size: 30px;
+    color: g.$color_white;
+  }
+
+  &--footer {
+    font-size: 20px;
     color: g.$color_white;
   }
 }

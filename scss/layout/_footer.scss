@@ -4,8 +4,17 @@
 .l-footer {
   text-align: center;
   &--menu {
-    justify-content: center;
+    justify-content: space-between;
     padding: 40px 62px 0 63px;
+
+    .c-title--vertical-line {
+      &::after {
+        width: 1.5px;
+        height: 70%;
+        top: 15%;
+        left: 12%;
+      }
+    }
   }
   .c-text--copy-right {
     display: inline-block;

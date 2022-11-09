@@ -96,8 +96,14 @@ ul {
   text-align: center;
 }
 .l-footer--menu {
-  justify-content: center;
+  justify-content: space-between;
   padding: 40px 62px 0 63px;
+}
+.l-footer--menu .c-title--vertical-line::after {
+  width: 1.5px;
+  height: 70%;
+  top: 15%;
+  left: 12%;
 }
 .l-footer .c-text--copy-right {
   display: inline-block;
@@ -304,8 +310,18 @@ ul {
   font-weight: bold;
   position: relative;
 }
+.c-title--vertical-line::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+}
 .c-title--access {
   font-size: 30px;
+  color: #ffffff;
+}
+.c-title--footer {
+  font-size: 20px;
   color: #ffffff;
 }
 
