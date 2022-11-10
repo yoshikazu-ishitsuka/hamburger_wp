@@ -5,9 +5,10 @@
   width: 375px;
   height: 8%;
 
-  @media (max-width: 425px) {
-    // width: 100%;
-  }
+  // @media (min-width: 768px) {
+  //   width: 100%;
+  //   max-width: 834px;
+  // }
 
   &__top {
     justify-content: space-between;

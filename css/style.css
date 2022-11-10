@@ -168,7 +168,7 @@ ul {
 }
 
 .l-main {
-  height: 2349px;
+  height: auto;
   width: 375px;
   background-color: #fffdfa;
 }
@@ -182,13 +182,9 @@ ul {
   position: relative;
 }
 .l-main .p-visual--sub--takeOut .c-title--sub {
-  margin-right: 40%;
   margin-left: 15px;
   padding-top: 11px;
-}
-.l-main .p-visual--sub--takeOut .sub-section {
-  position: absolute;
-  bottom: 0;
+  margin-bottom: auto;
 }
 .l-main .p-visual--sub--takeOut .sub-section .c-title--sentence {
   padding-top: 7px;
@@ -196,7 +192,8 @@ ul {
 .l-main .p-visual--sub--takeOut > .c-title--underline::after {
   width: 33.89px;
   height: 4px;
-  bottom: 2rem;
+  bottom: -2rem;
+  right: 10.5rem;
 }
 .l-main .p-visual--sub--eatIn {
   position: relative;
@@ -234,6 +231,11 @@ ul {
 }
 .l-main .p-access .c-background--map .c-title--underline {
   position: inherit;
+}
+
+.l-sidebar {
+  width: 375px;
+  height: auto;
 }
 
 .c-background-color--base {
@@ -351,10 +353,14 @@ ul {
 }
 .p-visual--sub--takeOut {
   background-image: url(/images/front/burger-01-sp.png);
-  background-repeat: no-repeat;
   background-position: center;
-  height: 642px;
+  background-size: cover;
+  height: auto;
+  min-height: 642px;
   margin: 0 20px 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
 }
 .p-visual--sub--sentence {
   width: 305px;

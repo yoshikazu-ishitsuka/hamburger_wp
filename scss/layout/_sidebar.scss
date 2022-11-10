@@ -1,0 +1,7 @@
+// _global.scssの読み込み
+@use "../foundation/global" as g;
+
+.l-sidebar {
+  width: 375px;
+  height: auto;
+}

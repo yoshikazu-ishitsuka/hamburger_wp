@@ -3,7 +3,7 @@
 
 // メインビジュアル
 .l-main {
-  height: 2349px;
+  height: auto;
   width: 375px;
   background-color: #fffdfa;
 
@@ -22,16 +22,19 @@
       position: relative;
 
       .c-title--sub {
-        margin-right: 40%;
+        // position: static;
+        // margin-right: 40%;
+        // position: absolute;
+        // top: 0;
+
         margin-left: 15px;
         padding-top: 11px;
+        margin-bottom: auto;
+        // margin-bottom: revert; → これだとうまくいかず
       }
 
       // 2つの文章ブロックを内包
       .sub-section {
-        position: absolute;
-        bottom: 0;
-
         .c-title--sentence {
           padding-top: 7px;
         }
@@ -42,7 +45,8 @@
         &::after {
           width: 33.89px;
           height: 4px;
-          bottom: 2rem;
+          bottom: -2rem;
+          right: 10.5rem;
         }
       }
     }
