@@ -22,15 +22,9 @@
       position: relative;
 
       .c-title--sub {
-        // position: static;
-        // margin-right: 40%;
-        // position: absolute;
-        // top: 0;
-
         margin-left: 15px;
         padding-top: 11px;
         margin-bottom: auto;
-        // margin-bottom: revert; → これだとうまくいかず
       }
 
       // 2つの文章ブロックを内包
@@ -58,13 +52,11 @@
       .c-title--sub {
         margin-left: 15px;
         padding-top: 11px;
+        margin-bottom: auto;
       }
 
       // 2つの文章ブロックを内包
       .sub-section {
-        position: absolute;
-        bottom: 0;
-
         .c-title--sentence {
           padding-top: 7px;
         }

@@ -22,6 +22,7 @@
       display: flex;
       flex-flow: column;
       justify-content: flex-end;
+      gap: 4rem;
     }
 
     &--sentence {
@@ -35,11 +36,17 @@
 
     &--eatIn {
       background-image: url(/images/front/burger-02-sp.png);
-      background-repeat: no-repeat;
+      // background-repeat: no-repeat;
+      // width: 336px;
       background-position: center;
-      height: 643px;
-      width: 336px;
+      background-size: cover;
+      height: auto;
+      min-height: 643px;
       margin: 0 20px 49px 19px;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+      gap: 4rem;
     }
   }
 }

@@ -201,10 +201,7 @@ ul {
 .l-main .p-visual--sub--eatIn .c-title--sub {
   margin-left: 15px;
   padding-top: 11px;
-}
-.l-main .p-visual--sub--eatIn .sub-section {
-  position: absolute;
-  bottom: 0;
+  margin-bottom: auto;
 }
 .l-main .p-visual--sub--eatIn .sub-section .c-title--sentence {
   padding-top: 7px;
@@ -361,6 +358,7 @@ ul {
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
+  gap: 4rem;
 }
 .p-visual--sub--sentence {
   width: 305px;
@@ -372,11 +370,15 @@ ul {
 }
 .p-visual--sub--eatIn {
   background-image: url(/images/front/burger-02-sp.png);
-  background-repeat: no-repeat;
   background-position: center;
-  height: 643px;
-  width: 336px;
+  background-size: cover;
+  height: auto;
+  min-height: 643px;
   margin: 0 20px 49px 19px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  gap: 4rem;
 }
 
 .p-access .c-background--map {
