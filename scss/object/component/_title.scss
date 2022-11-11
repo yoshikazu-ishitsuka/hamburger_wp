@@ -42,4 +42,22 @@
     font-size: 20px;
     color: g.$color_white;
   }
+
+  &--sidebar {
+    font-size: 34px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: g.$color_base;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    &__menu {
+      font-size: 24px;
+      font-family: "M PLUS 1p", sans-serif;
+      font-weight: bold;
+      color: g.$color_base;
+    }
+  }
 }

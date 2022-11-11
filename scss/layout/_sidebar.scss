@@ -9,4 +9,51 @@
   background-color: g.$color_f2ede9;
   top: 0;
   left: 26%;
+
+  .menu-close {
+    display: inline-block;
+    text-align: right;
+    line-height: normal;
+  }
+
+  .c-xmark::before {
+    // content: "\f00d";
+    // font-family: "Font Awesome 5 Free";
+    // font-weight: 900;
+    // font-style: normal;
+    margin-top: 25px;
+    margin-right: 17px;
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: 4px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .c-title--sidebar {
+    &__menu {
+      &:first-of-type {
+        margin-top: 212px;
+      }
+
+      margin: 3rem 186px auto 93px;
+    }
+  }
+
+  .c-text--sidebar {
+    margin: 40px 22px auto 113px;
+
+    > li {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.c-background--overlay {
+  &::after {
+    position: absolute;
+    top: 0;
+    width: 12.5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }

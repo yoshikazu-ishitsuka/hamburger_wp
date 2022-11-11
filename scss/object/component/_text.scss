@@ -17,4 +17,10 @@
     color: g.$color_white;
     text-align: center;
   }
+
+  &--sidebar {
+    font-size: 20px;
+    font-family: "M PLUS 1p", sans-serif;
+    color: g.$color_base;
+  }
 }

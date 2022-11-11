@@ -240,6 +240,39 @@ ul {
   top: 0;
   left: 26%;
 }
+.l-sidebar .menu-close {
+  display: inline-block;
+  text-align: right;
+  line-height: normal;
+}
+.l-sidebar .c-xmark::before {
+  margin-top: 25px;
+  margin-right: 17px;
+  font-size: 2.5rem;
+  -webkit-text-stroke-width: 4px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-color: #fff;
+}
+.l-sidebar .c-title--sidebar__menu {
+  margin: 3rem 186px auto 93px;
+}
+.l-sidebar .c-title--sidebar__menu:first-of-type {
+  margin-top: 212px;
+}
+.l-sidebar .c-text--sidebar {
+  margin: 40px 22px auto 113px;
+}
+.l-sidebar .c-text--sidebar > li {
+  margin-bottom: 23px;
+}
+
+.c-background--overlay::after {
+  position: absolute;
+  top: 0;
+  width: 12.5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .c-background-color--base {
   background-color: #fff7ef;
@@ -255,11 +288,6 @@ ul {
 .c-background--overlay::after {
   content: "";
   display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 .c-background--footer {
   background-image: url(/images/common/footer.png);
@@ -293,6 +321,13 @@ ul {
 .c-img--magnifying-glass {
   background-image: url(/images/common/search.png);
   background-repeat: no-repeat;
+}
+
+.c-xmark::before {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
 }
 
 .c-flex {
@@ -329,6 +364,23 @@ ul {
   font-size: 20px;
   color: #ffffff;
 }
+.c-title--sidebar {
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #707070;
+}
+@media (max-width: 1024px) {
+  .c-title--sidebar {
+    display: none;
+  }
+}
+.c-title--sidebar__menu {
+  font-size: 24px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  color: #707070;
+}
 
 .c-text--sub {
   font-size: 16px;
@@ -342,6 +394,11 @@ ul {
   font-size: 14px;
   color: #ffffff;
   text-align: center;
+}
+.c-text--sidebar {
+  font-size: 20px;
+  font-family: "M PLUS 1p", sans-serif;
+  color: #707070;
 }
 
 .c-display--inline-b {
@@ -422,6 +479,13 @@ ul {
   margin: 2.5rem 40px 2.5rem 40px;
   position: inherit;
   z-index: 3;
+}
+.p-access .c-background--overlay::after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* foundation */
