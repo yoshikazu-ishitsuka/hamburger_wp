@@ -131,8 +131,6 @@ ul {
 .l-header__top__menu {
   margin-top: 14px;
   margin-right: 16px;
-  font-size: 20px;
-  color: #707070;
 }
 .l-header .p-form-search {
   padding-bottom: 40px;
@@ -232,26 +230,30 @@ ul {
 }
 
 .l-sidebar {
+  display: none;
   width: 375px;
   height: 100%;
   min-height: 2716px;
   position: absolute;
   background-color: #f2ede9;
   top: 0;
-  left: 26%;
+  z-index: 4;
+  transition: 0.5s;
 }
 .l-sidebar .menu-close {
-  display: inline-block;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
   line-height: normal;
 }
 .l-sidebar .c-xmark::before {
+  display: inline-block;
+  color: #707070;
   margin-top: 25px;
   margin-right: 17px;
   font-size: 2.5rem;
   -webkit-text-stroke-width: 4px;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #f2ede9;
 }
 .l-sidebar .c-title--sidebar__menu {
   margin: 3rem 186px auto 93px;
@@ -293,6 +295,12 @@ ul {
   background-image: url(/images/common/footer.png);
 }
 
+.c-button--menu {
+  cursor: pointer;
+  font-size: 20px;
+  color: #707070;
+}
+
 .c-font-color--base {
   color: #707070;
 }
@@ -328,6 +336,7 @@ ul {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-style: normal;
+  cursor: pointer;
 }
 
 .c-flex {

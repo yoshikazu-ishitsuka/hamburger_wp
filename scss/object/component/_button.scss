@@ -1,2 +1,9 @@
 // _global.scssの読み込み
 @use "../../foundation/global" as g;
+
+.c-button {
+  &--menu {
+    cursor: pointer;
+    @include g.btn-menu(20px, #707070);
+  }
+}
