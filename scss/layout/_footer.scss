@@ -9,7 +9,7 @@
 
     .c-title--vertical-line {
       &::after {
-        width: 1.5px;
+        width: g.rem(1.5);
         height: 70%;
         top: 15%;
         left: 12%;
@@ -23,6 +23,6 @@
   }
 }
 .c-background--footer {
-  width: 375px;
+  width: g.rem(375);
   height: 9.375rem;
 }

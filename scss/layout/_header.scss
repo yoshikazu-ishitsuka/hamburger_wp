@@ -2,7 +2,8 @@
 @use "../foundation/global" as g;
 
 .l-header {
-  width: 375px;
+  // width: 375px;
+  width: g.rem(375);
   height: 8%;
 
   // @media (min-width: 768px) {
@@ -29,13 +30,15 @@
 
     .c-form-search {
       justify-content: center;
-      width: 320px;
+      // width: 320px;
+      width: g.rem(320);
       max-width: 100%;
       margin-left: 24px;
 
       .c-form-search__keyword {
-        width: 230px;
-        height: 46px;
+        // width: 230px;
+        width: g.rem(230);
+        height: g.rem(46);
         border-radius: g.$radius;
         border-width: g.$bd_width;
         margin-right: 12px;
@@ -55,8 +58,8 @@
       }
 
       .c-form-search__submit {
-        width: 78px;
-        height: 46px;
+        width: g.rem(78);
+        height: g.rem(46);
         background-color: #f2ede9;
         border-radius: g.$radius;
         border-width: g.$bd_width;

@@ -4,7 +4,7 @@
 // メインビジュアル
 .l-main {
   height: auto;
-  width: 375px;
+  width: g.rem(375);
   background-color: #fffdfa;
 
   .p-visual--main {
@@ -37,8 +37,9 @@
       // Take out下の白線
       > .c-title--underline {
         &::after {
-          width: 33.89px;
-          height: 4px;
+          // width: 33.89px;
+          width: g.rem(33.89);
+          height: g.rem(4);
           bottom: -2rem;
           right: 10.5rem;
         }
@@ -84,7 +85,7 @@
     position: relative;
 
     .c-background--map {
-      width: 375px;
+      width: g.rem(375);
       // 24rem
 
       .c-title--access {
