@@ -4,6 +4,7 @@
 .l-footer {
   text-align: center;
   &--menu {
+    display: flex;
     justify-content: space-between;
     padding: 40px 62px 0 63px;
 

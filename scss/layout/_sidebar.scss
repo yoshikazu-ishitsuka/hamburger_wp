@@ -1,36 +1,32 @@
 // _global.scssの読み込み
 @use "../foundation/global" as g;
 
+// 一番上の親要素
 .side-wrapper {
   width: auto;
   height: auto;
   display: flex;
   position: absolute;
   top: 0;
+  left: 100%;
 
+  // l-sidebar__mainとc-background--overlayの親要素
   .l-sidebar {
-    // visibility: hidden;
+    visibility: hidden;
     display: flex;
     justify-content: flex-end;
     width: g.rem(375);
-    // height: auto;
-    position: sticky;
-    top: 0;
-    z-index: 4;
+    height: 100vh;
     transition: 0.5s;
-    overflow: scroll;
 
-    // min-height: 2716px;
-    // position: absolute;
-    // top: 0;
-    // left: g.rem(375);
-
+    // ｘ印のspanセレクタのクラス
     .menu-close {
       display: flex;
       justify-content: flex-end;
       line-height: normal;
     }
 
+    // ｘ印の実装部分
     .c-xmark::before {
       display: inline-block;
       color: g.$color_base;
@@ -42,14 +38,19 @@
       -webkit-text-stroke-color: #f2ede9;
     }
 
+    // サイドバーのメニューの一覧があるメイン部分
     &__main {
       width: g.rem(328);
+      height: 100%;
       background-color: g.$color_f2ede9;
+      overflow: scroll;
+      // position: fixed; // ←必要？
 
       .c-title--sidebar {
         display: none;
 
         &__menu {
+          // メニュータイトルの一番上のバーガー部分への指定
           &:first-of-type {
             margin-top: 212px;
           }
@@ -67,6 +68,7 @@
     }
   }
 
+  // サイドバーの左側の黒い透過部分
   .c-background--overlay {
     &::after {
       position: absolute;

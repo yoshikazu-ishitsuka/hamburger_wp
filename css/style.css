@@ -75,7 +75,6 @@ body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-size: 16px;
-  position: relative;
 }
 
 .wrapper {
@@ -102,6 +101,7 @@ ul {
   text-align: center;
 }
 .l-footer--menu {
+  display: flex;
   justify-content: space-between;
   padding: 40px 62px 0 63px;
 }
@@ -127,6 +127,7 @@ ul {
   height: 8%;
 }
 .l-header__top {
+  display: flex;
   justify-content: space-between;
 }
 .l-header__top__logo {
@@ -141,6 +142,7 @@ ul {
   padding-bottom: 40px;
 }
 .l-header .p-form-search .c-form-search {
+  display: flex;
   justify-content: center;
   width: 20rem;
   max-width: 100%;
@@ -240,16 +242,15 @@ ul {
   display: flex;
   position: absolute;
   top: 0;
+  left: 100%;
 }
 .side-wrapper .l-sidebar {
+  visibility: hidden;
   display: flex;
   justify-content: flex-end;
   width: 23.4375rem;
-  position: sticky;
-  top: 0;
-  z-index: 4;
+  height: 100vh;
   transition: 0.5s;
-  overflow: scroll;
 }
 .side-wrapper .l-sidebar .menu-close {
   display: flex;
@@ -268,7 +269,9 @@ ul {
 }
 .side-wrapper .l-sidebar__main {
   width: 20.5rem;
+  height: 100%;
   background-color: #f2ede9;
+  overflow: scroll;
 }
 .side-wrapper .l-sidebar__main .c-title--sidebar {
   display: none;
@@ -435,7 +438,7 @@ ul {
 .p-visual--main {
   background-image: url(/images/front/main-visual-sp.png);
   background-size: cover;
-  height: 285px;
+  height: 17.8125rem;
   margin-bottom: 20px;
 }
 .p-visual--sub--takeOut {
@@ -451,8 +454,8 @@ ul {
   gap: 4rem;
 }
 .p-visual--sub--sentence {
-  width: 305px;
-  height: 124px;
+  width: 19.0625rem;
+  height: 7.75rem;
   opacity: 0.8;
   margin: 0 10px;
   display: inline-block;

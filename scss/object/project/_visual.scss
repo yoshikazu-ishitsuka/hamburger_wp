@@ -6,7 +6,7 @@
   &--main {
     background-image: url(/images/front/main-visual-sp.png);
     background-size: cover;
-    height: 285px;
+    height: g.rem(285);
     margin-bottom: 20px;
   }
 
@@ -26,8 +26,8 @@
     }
 
     &--sentence {
-      width: 305px;
-      height: 124px;
+      width: g.rem(305);
+      height: g.rem(124);
       opacity: 0.8;
       margin: 0 10px;
       display: inline-block;
@@ -37,7 +37,6 @@
     &--eatIn {
       background-image: url(/images/front/burger-02-sp.png);
       // background-repeat: no-repeat;
-      // width: 336px;
       background-position: center;
       background-size: cover;
       height: auto;
