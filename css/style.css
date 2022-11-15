@@ -240,9 +240,6 @@ ul {
 .l-main .p-access {
   position: relative;
 }
-.l-main .p-access .c-background--map {
-  width: 23.4375rem;
-}
 .l-main .p-access .c-background--map .c-title--access {
   position: inherit;
   z-index: 3;
