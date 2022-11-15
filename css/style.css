@@ -102,14 +102,15 @@ ul {
 }
 .l-footer--menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 40px 62px 0 63px;
 }
 .l-footer--menu .c-title--vertical-line::after {
   width: 0.09375rem;
   height: 70%;
+  margin: 0 1rem;
+  position: relative;
   top: 15%;
-  left: 12%;
 }
 .l-footer .c-text--copy-right {
   display: inline-block;
@@ -118,7 +119,6 @@ ul {
 }
 
 .c-background--footer {
-  width: 23.4375rem;
   height: 9.375rem;
 }
 
@@ -395,7 +395,6 @@ ul {
 .c-title--vertical-line::after {
   content: "";
   display: inline-block;
-  position: relative;
   background-color: #fff;
 }
 .c-title--access {
