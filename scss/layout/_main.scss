@@ -29,8 +29,15 @@
 
       // 2つの文章ブロックを内包
       .sub-section {
+        margin: 0 15px;
+
         .c-title--sentence {
           padding-top: 7px;
+          padding-left: 10px;
+        }
+
+        .c-text--sub {
+          margin: 3px 10px 15px;
         }
       }
 
@@ -58,8 +65,15 @@
 
       // 2つの文章ブロックを内包
       .sub-section {
+        margin: 0 15px;
+
         .c-title--sentence {
           padding-top: 7px;
+          padding-left: 10px;
+        }
+
+        .c-text--sub {
+          margin: 3px 11px 15px 10px;
         }
       }
 
@@ -76,7 +90,7 @@
 
     &--sentence {
       margin-bottom: 15px;
-      padding: 0 10px;
+      // padding: 0 10px;
     }
   }
 

@@ -192,8 +192,15 @@ ul {
   padding-top: 11px;
   margin-bottom: auto;
 }
+.l-main .p-visual--sub--takeOut .sub-section {
+  margin: 0 15px;
+}
 .l-main .p-visual--sub--takeOut .sub-section .c-title--sentence {
   padding-top: 7px;
+  padding-left: 10px;
+}
+.l-main .p-visual--sub--takeOut .sub-section .c-text--sub {
+  margin: 3px 10px 15px;
 }
 .l-main .p-visual--sub--takeOut > .c-title--underline::after {
   width: 2.118125rem;
@@ -209,8 +216,15 @@ ul {
   padding-top: 11px;
   margin-bottom: auto;
 }
+.l-main .p-visual--sub--eatIn .sub-section {
+  margin: 0 15px;
+}
 .l-main .p-visual--sub--eatIn .sub-section .c-title--sentence {
   padding-top: 7px;
+  padding-left: 10px;
+}
+.l-main .p-visual--sub--eatIn .sub-section .c-text--sub {
+  margin: 3px 11px 15px 10px;
 }
 .l-main .p-visual--sub--eatIn > .c-title--underline::after {
   width: 33.89px;
@@ -220,7 +234,6 @@ ul {
 }
 .l-main .p-visual--sub--sentence {
   margin-bottom: 15px;
-  padding: 0 10px;
 }
 .l-main .p-access {
   position: relative;
@@ -457,7 +470,6 @@ ul {
   width: 19.0625rem;
   height: 7.75rem;
   opacity: 0.8;
-  margin: 0 10px;
   display: inline-block;
   height: auto;
 }
@@ -492,21 +504,21 @@ ul {
   height: 60%;
 }
 .p-access--map .c-title--access {
-  padding-top: 2rem;
-  margin-left: 2.5rem;
+  padding-top: 40px;
+  margin-left: 42px;
 }
 .p-access--map .c-title--underline::after {
   width: 4.5rem;
   height: 2px;
   bottom: -2rem;
-  left: -15rem;
+  left: -15.5rem;
   background-color: #ffffff;
 }
 .p-access--map .c-text--access {
   display: inline-block;
   height: auto;
   line-height: 2rem;
-  margin: 2.5rem 40px 2.5rem 40px;
+  margin: 2.5rem 40px 51px;
   position: inherit;
   z-index: 3;
 }

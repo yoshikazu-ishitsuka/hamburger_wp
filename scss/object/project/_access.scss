@@ -27,15 +27,15 @@
     // Mapのタイトル
     .c-title {
       &--access {
-        padding-top: 2rem;
-        margin-left: 2.5rem;
+        padding-top: 40px;
+        margin-left: 42px;
       }
       &--underline {
         &::after {
           width: 4.5rem;
           height: 2px;
           bottom: -2rem;
-          left: -15rem;
+          left: -15.5rem;
           background-color: g.$color_white;
         }
       }
@@ -45,7 +45,7 @@
       display: inline-block;
       height: auto;
       line-height: 2rem;
-      margin: 2.5rem 40px 2.5rem 40px;
+      margin: 2.5rem 40px 51px;
       position: inherit;
       z-index: 3;
     }
