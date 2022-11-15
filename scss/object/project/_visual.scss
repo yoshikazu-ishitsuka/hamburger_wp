@@ -4,9 +4,10 @@
 // main内の画像関連についての設定
 .p-visual {
   &--main {
-    background-image: url(/images/front/main-visual-sp.png);
+    background-image: url(/images/front/main-visual-pc.png);
     background-size: cover;
-    height: g.rem(285);
+    background-position: center;
+    // height: g.rem(285);
     margin-bottom: 20px;
   }
 
@@ -26,7 +27,7 @@
     }
 
     &--sentence {
-      width: g.rem(305);
+      // width: g.rem(305);
       height: g.rem(124);
       opacity: 0.8;
       // margin: 0 10px;
