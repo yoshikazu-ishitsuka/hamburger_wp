@@ -123,20 +123,21 @@ ul {
 }
 
 .l-header {
-  width: 23.4375rem;
+  width: 100%;
   height: 8%;
 }
 .l-header__top {
   display: flex;
-  justify-content: space-between;
 }
 .l-header__top__logo {
   font-size: 40px;
   margin: 40px 0 38px 86px;
+  margin-left: auto;
 }
 .l-header__top__menu {
   margin-top: 14px;
   margin-right: 16px;
+  margin-left: auto;
 }
 .l-header .p-form-search {
   padding-bottom: 40px;
@@ -144,12 +145,10 @@ ul {
 .l-header .p-form-search .c-form-search {
   display: flex;
   justify-content: center;
-  width: 20rem;
-  max-width: 100%;
   margin-left: 24px;
 }
 .l-header .p-form-search .c-form-search .c-form-search__keyword {
-  width: 14.375rem;
+  width: 61%;
   height: 2.875rem;
   border-radius: 10px;
   border-width: 1px;
@@ -166,7 +165,7 @@ ul {
   background-position: 16px 11px;
 }
 .l-header .p-form-search .c-form-search .c-form-search__submit {
-  width: 4.875rem;
+  width: 20%;
   height: 2.875rem;
   background-color: #f2ede9;
   border-radius: 10px;

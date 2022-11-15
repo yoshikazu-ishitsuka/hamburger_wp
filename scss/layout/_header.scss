@@ -3,29 +3,41 @@
 
 // ヘッダーの最上位の親要素
 .l-header {
-  width: g.rem(375);
+  width: 100%;
   height: 8%;
 
   // @media (min-width: 768px) {
   //   width: 100%;
-  //   max-width: 834px;
+  //   // max-width: 834px;
   // }
 
   // logoとmenuの親要素
   &__top {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+
+    // @media (min-width: 768px) {
+    //   justify-content: inherit;
+    // }
 
     // タイトル（Hamburger）の装飾
     &__logo {
       font-size: 40px;
       margin: 40px 0 38px 86px;
+      margin-left: auto;
+
+      // @media (min-width: 768px) {
+      // }
     }
 
     // Menuボタンの装飾
     &__menu {
       margin-top: 14px;
       margin-right: 16px;
+      margin-left: auto;
+
+      // @media (min-width: 768px) {
+      // }
     }
   }
 
@@ -37,16 +49,24 @@
     .c-form-search {
       display: flex;
       justify-content: center;
-      width: g.rem(320);
-      max-width: 100%;
+      // max-width: 100%;
       margin-left: 24px;
 
+      // @media (min-width: 768px) {
+      //   width: auto;
+      // }
+
+      // 検索ボックス
       .c-form-search__keyword {
-        width: g.rem(230);
+        width: 61%;
         height: g.rem(46);
         border-radius: g.$radius;
         border-width: g.$bd_width;
         margin-right: 12px;
+
+        // @media (min-width: 768px) {
+        //   width: g.rem(396);
+        // }
 
         &:focus {
           background-image: none;
@@ -62,12 +82,17 @@
         background-position: 16px 11px;
       }
 
+      // 検索ボタン
       .c-form-search__submit {
-        width: g.rem(78);
+        width: 20%;
         height: g.rem(46);
         background-color: #f2ede9;
         border-radius: g.$radius;
         border-width: g.$bd_width;
+
+        // @media (min-width: 768px) {
+        //   width: g.rem(136);
+        // }
       }
     }
   }
