@@ -15,7 +15,6 @@
     visibility: hidden;
     display: flex;
     justify-content: flex-end;
-    width: g.rem(375);
     height: 100vh;
     transition: 0.5s;
 
@@ -40,11 +39,16 @@
 
     // サイドバーのメニューの一覧があるメイン部分
     &__main {
-      width: g.rem(328);
+      width: 100vw;
       height: 100%;
-      background-color: g.$color_f2ede9;
       overflow: scroll;
-      // position: fixed; // ←必要？
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 12.5%,
+        g.$color_f2ede9 12.5%,
+        g.$color_f2ede9 100%
+      );
 
       .c-title--sidebar {
         display: none;
@@ -54,29 +58,17 @@
           &:first-of-type {
             margin-top: 212px;
           }
-          margin: 3rem 0 0 93px;
+          margin: 3rem 0 0 20%;
         }
       }
 
       .c-text--sidebar {
-        margin: 40px 22px auto 113px;
+        margin: 40px 22px auto 21.5%;
 
         > li {
           margin-bottom: 23px;
         }
       }
-    }
-  }
-
-  // サイドバーの左側の黒い透過部分
-  .c-background--overlay {
-    &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 12.5%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
     }
   }
 }
