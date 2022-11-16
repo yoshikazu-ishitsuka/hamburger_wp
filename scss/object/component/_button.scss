@@ -4,6 +4,7 @@
 .c-button {
   &--menu {
     cursor: pointer;
-    @include g.btn-menu(20px, #707070);
+    color: g.$color_base;
+    // @include g.btn-menu(20px, #707070);
   }
 }

@@ -139,6 +139,14 @@ ul {
   margin-right: 16px;
   margin-left: auto;
 }
+.l-header__top__menu .c-button--menu {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .l-header__top__menu .c-button--menu {
+    font-size: 34px;
+  }
+}
 .l-header .p-form-search {
   padding-bottom: 40px;
 }
@@ -146,6 +154,13 @@ ul {
   display: flex;
   justify-content: center;
   margin-left: 24px;
+}
+@media (min-width: 768px) {
+  .l-header .p-form-search .c-form-search {
+    justify-content: inherit;
+    width: 65%;
+    margin: 0 auto;
+  }
 }
 .l-header .p-form-search .c-form-search .c-form-search__keyword {
   width: 61%;
@@ -321,7 +336,6 @@ ul {
 
 .c-button--menu {
   cursor: pointer;
-  font-size: 20px;
   color: #707070;
 }
 
