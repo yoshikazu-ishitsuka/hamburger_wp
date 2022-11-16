@@ -5,7 +5,7 @@ $(function () {
       visibility: "visible",
       transition: "0.5s",
     });
-    $(".side-wrapper").css({ left: "0", transition: "0.5s" });
+    $(".side-wrapper").css({ "z-index": "4", left: "0", transition: "0.5s" });
     $("body").css({ position: "fixed", overflow: "scroll" });
     $(".l-sidebar").toggleClass(".is-open");
     // $(".l-sidebar.js-trigger.is-open").css({ position: "sticky", top: "0" });
@@ -20,8 +20,9 @@ $(function () {
       visibility: "hidden",
       transition: "0.5s",
     });
-    $(".side-wrapper").css({ left: "100%" });
+    $(".side-wrapper").css({ "z-index": "-1", left: "100%" });
     $("body").css({ position: "static", overflow: "inherit" });
+    // $(".side-wrapper").css({ "z-index": "-1", width: "auto", left: "100%" });
   });
 });
 
