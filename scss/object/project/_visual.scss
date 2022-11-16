@@ -7,11 +7,25 @@
     background-image: url(/images/front/main-visual-pc.png);
     background-size: cover;
     background-position: center;
-    // height: g.rem(285);
     margin-bottom: 20px;
+
+    @include g.mq(tab) {
+      margin-bottom: 40px;
+    }
   }
 
   &--sub {
+    @include g.mq(tab) {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 40px;
+
+      > li {
+        display: flex;
+        flex: 1 0 auto;
+      }
+    }
+
     &--takeOut {
       background-image: url(/images/front/burger-01-sp.png);
       // background-repeat: no-repeat;
@@ -24,10 +38,14 @@
       flex-flow: column;
       justify-content: flex-end;
       gap: 4rem;
+
+      @include g.mq(tab) {
+        margin: inherit;
+        margin: 0 40px;
+      }
     }
 
     &--sentence {
-      // width: g.rem(305);
       height: g.rem(124);
       opacity: 0.8;
       // margin: 0 10px;
@@ -47,6 +65,11 @@
       flex-flow: column;
       justify-content: flex-end;
       gap: 4rem;
+
+      @include g.mq(tab) {
+        margin: inherit;
+        margin-right: 40px;
+      }
     }
   }
 }

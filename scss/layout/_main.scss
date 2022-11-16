@@ -4,22 +4,30 @@
 // メインビジュアル
 .l-main {
   height: auto;
-  // width: g.rem(375);
   background-color: #fffdfa;
 
   .p-visual--main {
     .c-title--main {
       padding: 119px 134px 115px 25px;
+
+      @include g.mq(tab) {
+        visibility: hidden;
+      }
     }
   }
 
   // サブビジュアル
   .p-visual--sub {
     list-style: none;
+    width: 100%;
 
     // テイクアウト
-    &--takeOut {
+    > &--takeOut {
       position: relative;
+
+      @include g.mq(tab) {
+        width: calc(50vw - 60px);
+      }
 
       .c-title--sub {
         margin-left: 15px;
@@ -58,6 +66,10 @@
     // イートイン
     &--eatIn {
       position: relative;
+
+      @include g.mq(tab) {
+        width: calc(50vw - 60px);
+      }
 
       .c-title--sub {
         margin-left: 15px;

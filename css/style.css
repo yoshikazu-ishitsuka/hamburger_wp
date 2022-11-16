@@ -142,7 +142,7 @@ ul {
 .l-header__top__menu .c-button--menu {
   font-size: 20px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .l-header__top__menu .c-button--menu {
     font-size: 34px;
   }
@@ -155,7 +155,7 @@ ul {
   justify-content: center;
   margin-left: 24px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .l-header .p-form-search .c-form-search {
     justify-content: inherit;
     width: 65%;
@@ -194,11 +194,22 @@ ul {
 .l-main .p-visual--main .c-title--main {
   padding: 119px 134px 115px 25px;
 }
+@media screen and (min-width: 768px) {
+  .l-main .p-visual--main .c-title--main {
+    visibility: hidden;
+  }
+}
 .l-main .p-visual--sub {
   list-style: none;
+  width: 100%;
 }
 .l-main .p-visual--sub--takeOut {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .l-main .p-visual--sub--takeOut {
+    width: calc(50vw - 60px);
+  }
 }
 .l-main .p-visual--sub--takeOut .c-title--sub {
   margin-left: 15px;
@@ -225,6 +236,11 @@ ul {
 }
 .l-main .p-visual--sub--eatIn {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .l-main .p-visual--sub--eatIn {
+    width: calc(50vw - 60px);
+  }
 }
 .l-main .p-visual--sub--eatIn .c-title--sub {
   margin-left: 15px;
@@ -457,6 +473,22 @@ ul {
   background-position: center;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .p-visual--main {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-visual--sub {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  .p-visual--sub > li {
+    display: flex;
+    flex: 1 0 auto;
+  }
+}
 .p-visual--sub--takeOut {
   background-image: url(/images/front/burger-01-sp.png);
   background-position: center;
@@ -468,6 +500,12 @@ ul {
   flex-flow: column;
   justify-content: flex-end;
   gap: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .p-visual--sub--takeOut {
+    margin: inherit;
+    margin: 0 40px;
+  }
 }
 .p-visual--sub--sentence {
   height: 7.75rem;
@@ -486,6 +524,12 @@ ul {
   flex-flow: column;
   justify-content: flex-end;
   gap: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .p-visual--sub--eatIn {
+    margin: inherit;
+    margin-right: 40px;
+  }
 }
 
 .p-access .c-background--map {
