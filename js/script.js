@@ -5,14 +5,14 @@ $(function () {
       visibility: "visible",
       transition: "0.5s",
     });
-    $(".side-wrapper").css({ "z-index": "4", left: "0", transition: "0.5s" });
+    $(".side-wrapper").css({ left: "0", transition: "0.5s" });
     $("body").css({ position: "fixed", overflow: "scroll" });
     $(".l-sidebar").toggleClass(".is-open");
     // $(".l-sidebar.js-trigger.is-open").css({ position: "sticky", top: "0" });
   });
 });
 
-// sidebarのXボタン押下時の処理
+// sidebarのｘボタン押下時の処理
 $(function () {
   $(".menu-close.js-button").click(function () {
     $(".l-sidebar").removeClass(".is-open");
@@ -20,7 +20,17 @@ $(function () {
       visibility: "hidden",
       transition: "0.5s",
     });
-    $(".side-wrapper").css({ "z-index": "-1", width: "auto", left: "100%" });
+    $(".side-wrapper").css({ left: "100%" });
     $("body").css({ position: "static", overflow: "inherit" });
   });
 });
+
+// $(window).resize(function () {
+//   $(".l-sidebar").removeClass(".is-open");
+//   $(".l-sidebar").css({
+//     visibility: "hidden",
+//     transition: "0.5s",
+//   });
+//   $(".side-wrapper").css({ "z-index": "-1", width: "auto", left: "100%" });
+//   $("body").css({ position: "static", overflow: "inherit" });
+// });
