@@ -12,7 +12,7 @@
 
   // l-sidebar__mainとc-background--overlayの親要素
   .l-sidebar {
-    visibility: hidden;
+    // visibility: hidden;
     display: flex;
     justify-content: flex-end;
     height: 100vh;
@@ -39,16 +39,19 @@
 
     // サイドバーのメニューの一覧があるメイン部分
     &__main {
-      width: 100vw;
+      // width: 100vw;
+      width: 0;
       height: 100%;
       overflow: scroll;
-      background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.5) 12.5%,
-        g.$color_f2ede9 12.5%,
-        g.$color_f2ede9 100%
-      );
+      background-color: g.$color_f2ede9;
+      // overflow-y: scroll;
+      // background: linear-gradient(
+      //   to right,
+      //   rgba(0, 0, 0, 0.5) 0%,
+      //   rgba(0, 0, 0, 0.5) 12.5%,
+      //   g.$color_f2ede9 12.5%,
+      //   g.$color_f2ede9 100%
+      // );
 
       .c-title--sidebar {
         display: none;
