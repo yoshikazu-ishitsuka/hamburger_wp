@@ -22,7 +22,7 @@ $(function () {
     $(".l-sidebar").removeClass("is-open");
     $(".l-sidebar").css({
       "transition-property": "width",
-      "transition-duration": "0.2s",
+      "transition-duration": "0.5s",
     });
     $(".side-wrapper").css({ "z-index": "-1", left: "100%" });
     $(".wrapper").css({ position: "static" });
