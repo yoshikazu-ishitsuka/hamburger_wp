@@ -335,7 +335,7 @@ ul {
   width: 0;
   height: 100%;
   overflow: scroll;
-  background-color: #f2ede9;
+  background: linear-gradient(to right, rgba(95, 93, 91, 0) 0%, rgba(95, 93, 91, 0) 12.5%, #f2ede9 12.5%, #f2ede9 100%);
 }
 .side-wrapper .l-sidebar__main .c-title--sidebar {
   display: none;
@@ -604,15 +604,7 @@ ul {
   top: 0;
   width: 100%;
   height: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.u-background--overlay.js-height::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .u-background--overlay.js-height::after {
@@ -621,7 +613,7 @@ ul {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* foundation */
