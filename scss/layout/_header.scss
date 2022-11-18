@@ -23,7 +23,11 @@
     &__logo {
       font-size: 40px;
       margin: 40px 0 38px 86px;
-      margin-left: auto;
+
+      // ブレークポイント
+      @include g.mq(sp) {
+        margin-left: auto;
+      }
 
       // @media (min-width: 768px) {
       // }

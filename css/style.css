@@ -126,7 +126,8 @@ ul {
 .l-footer--menu {
   display: flex;
   justify-content: center;
-  padding: 40px 62px 0 63px;
+  padding-top: 40px;
+  margin-bottom: auto;
 }
 .l-footer--menu .c-title--vertical-line::after {
   width: 0.09375rem;
@@ -137,8 +138,7 @@ ul {
 }
 .l-footer .c-text--copy-right {
   display: inline-block;
-  margin-top: 34px;
-  margin-bottom: 30px;
+  margin-top: 1.5rem;
 }
 
 .c-background--footer {
@@ -155,7 +155,11 @@ ul {
 .l-header__top__logo {
   font-size: 40px;
   margin: 40px 0 38px 86px;
-  margin-left: auto;
+}
+@media screen and (min-width: 600px) {
+  .l-header__top__logo {
+    margin-left: auto;
+  }
 }
 .l-header__top__menu {
   margin-top: 14px;
