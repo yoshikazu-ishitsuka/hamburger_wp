@@ -1,17 +1,18 @@
 // headerのMenuボタン押下時の処理
 $(function () {
   $(".c-button--menu.js-button").click(function () {
-    $(".u-background--overlay").toggleClass(".js-height");
+    $(".wrapper.u-background--overlay").toggleClass("js-height");
     $(".l-sidebar").css({
       // visibility: "visible",
       transition: "0.5s",
     });
     $(".side-wrapper").css({ "z-index": "4", left: "0", transition: "0.5s" });
-    // $(".l-sidebar__main").css({ width: "100vw" });
-    // $(".wrapper").css({ position: "fixed" });
-    $("body").css({ position: "sticky", overflow: "scroll" });
+    $(".l-sidebar__main").css({ width: "100vw" });
+    $("body").css({ position: "fixed", overflow: "scroll" });
+    $(".wrapper").css({ position: "sticky", top: "0" });
     // $(".wrapper.u-background--overlay").css({ height: "100%" });
-    $(".l-sidebar").toggleClass(".is-open");
+    // $(".u-background--overlay" + ".js-height").toggleClass("").;
+    $(".l-sidebar").toggleClass("is-open");
     // $(".l-sidebar.js-trigger.is-open").css({ position: "sticky", top: "0" });
     $(".menu-close.js-button").css({ position: "sticky", top: "0" });
   });
@@ -20,7 +21,8 @@ $(function () {
 // sidebarのｘボタン押下時の処理
 $(function () {
   $(".menu-close.js-button").click(function () {
-    $(".l-sidebar").removeClass(".is-open");
+    $(".u-background--overlay").toggleClass("js-height");
+    $(".l-sidebar").removeClass("is-open");
     $(".l-sidebar").css({
       // visibility: "hidden",
       "transition-property": "width",
