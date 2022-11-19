@@ -10,6 +10,7 @@
     .c-title--main {
       padding: 119px 134px 115px 25px;
 
+      // ブレークポイント（タブレット）
       @include g.mq(tab) {
         visibility: hidden;
       }
@@ -25,6 +26,7 @@
     > &--takeOut {
       position: relative;
 
+      // ブレークポイント（タブレット）
       @include g.mq(tab) {
         width: calc(50vw - 60px);
       }
@@ -54,7 +56,6 @@
       // Take out下の白線
       > .c-title--underline {
         &::after {
-          // width: 33.89px;
           width: g.rem(33.89);
           height: g.rem(4);
           bottom: -2rem;
@@ -67,6 +68,7 @@
     &--eatIn {
       position: relative;
 
+      // ブレークポイント（タブレット）
       @include g.mq(tab) {
         width: calc(50vw - 60px);
       }
@@ -106,7 +108,6 @@
 
     &--sentence {
       margin-bottom: 15px;
-      // padding: 0 10px;
     }
   }
 
@@ -115,9 +116,6 @@
     position: relative;
 
     .c-background--map {
-      // width: g.rem(375);
-      // 24rem
-
       .c-title--access {
         position: inherit;
         z-index: 3;
