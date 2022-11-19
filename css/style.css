@@ -562,18 +562,23 @@ ul {
   background-size: cover;
   display: inline-block;
   height: auto;
-  min-height: 691px;
+  min-height: 43.1875rem;
   position: relative;
   z-index: 1;
 }
 .p-access--map::before {
   content: "";
   display: block;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   width: 100%;
   height: 60%;
+}
+@media screen and (min-width: 768px) {
+  .p-access--map::before {
+    height: 100%;
+  }
 }
 .p-access--map .c-title--access {
   padding-top: 40px;
