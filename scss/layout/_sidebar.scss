@@ -10,9 +10,8 @@
   top: 0;
   left: 100%;
 
-  // l-sidebar__mainとc-background--overlayの親要素
+  // l-sidebar__mainの親要素
   .l-sidebar {
-    // visibility: hidden;
     display: flex;
     justify-content: flex-end;
     height: 100vh;
@@ -39,12 +38,9 @@
 
     // サイドバーのメニューの一覧があるメイン部分
     &__main {
-      // width: 100vw;
       width: 0;
       height: 100%;
       overflow: scroll;
-      // background-color: g.$color_f2ede9;
-      // overflow-y: scroll;
       background: linear-gradient(
         to right,
         rgba(95, 93, 91, 0) 0%,
@@ -53,20 +49,43 @@
         g.$color_f2ede9 100%
       );
 
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        background: linear-gradient(
+          to right,
+          rgba(95, 93, 91, 0) 0%,
+          rgba(95, 93, 91, 0) 56%,
+          g.$color_f2ede9 56%,
+          g.$color_f2ede9 100%
+        );
+      }
+
       .c-title--sidebar {
         display: none;
 
         &__menu {
-          // メニュータイトルの一番上のバーガー部分への指定
+          // メニュータイトルの一番上のバーガー文字への指定
           &:first-of-type {
             margin-top: 212px;
           }
+          // バーガー,サイド,ドリンクへの指定
           margin: 3rem 0 0 20%;
+
+          // ブレークポイント（タブレット）
+          @include g.mq(tab) {
+            margin: 3rem 0 0 61%;
+          }
         }
       }
 
+      // メニューのカテゴリ名への指定
       .c-text--sidebar {
         margin: 40px 22px auto 21.5%;
+
+        // ブレークポイント（タブレット）
+        @include g.mq(tab) {
+          margin: 3rem 0 0 63%;
+        }
 
         > li {
           margin-bottom: 23px;
