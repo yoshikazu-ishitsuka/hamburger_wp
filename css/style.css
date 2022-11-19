@@ -161,10 +161,20 @@ ul {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1025px) {
+  .l-header__top__logo {
+    margin-left: 4%;
+  }
+}
 .l-header__top__menu {
   margin-top: 14px;
   margin-right: 16px;
   margin-left: auto;
+}
+@media screen and (min-width: 1025px) {
+  .l-header__top__menu {
+    display: none;
+  }
 }
 .l-header__top__menu .c-button--menu {
   font-size: 20px;
@@ -187,6 +197,13 @@ ul {
     justify-content: inherit;
     width: 65%;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .l-header .p-form-search .c-form-search {
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 2%;
   }
 }
 .l-header .p-form-search .c-form-search .c-form-search__keyword {
