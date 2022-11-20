@@ -8,6 +8,16 @@
 
   &--sub {
     font-size: 41px;
+
+    // ブレークポイント（タブレット）
+    @include g.mq(tab) {
+      font-size: 44px;
+    }
+
+    // ブレークポイント（PC）
+    @include g.mq(pc) {
+      font-size: 50px;
+    }
   }
 
   &--sentence {
@@ -48,7 +58,9 @@
     font-weight: bold;
     color: g.$color_base;
 
-    @media (max-width: 1024px) {
+    // @media (max-width: 1024px)
+    // ブレークポイント（PC）
+    @include g.mq(pc) {
       display: none;
     }
 

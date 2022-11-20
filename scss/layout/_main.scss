@@ -14,6 +14,12 @@
       @include g.mq(tab) {
         visibility: hidden;
       }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        visibility: visible;
+        padding-left: 86px;
+      }
     }
   }
 
@@ -25,11 +31,6 @@
     // テイクアウト
     > &--takeOut {
       position: relative;
-
-      // ブレークポイント（タブレット）
-      @include g.mq(tab) {
-        width: calc(50vw - 60px);
-      }
 
       .c-title--sub {
         margin-left: 15px;
@@ -52,26 +53,11 @@
           margin: 3px 10px 15px;
         }
       }
-
-      // Take out下の白線
-      > .c-title--underline {
-        &::after {
-          width: g.rem(33.89);
-          height: g.rem(4);
-          bottom: -2rem;
-          right: 10.5rem;
-        }
-      }
     }
 
     // イートイン
     &--eatIn {
       position: relative;
-
-      // ブレークポイント（タブレット）
-      @include g.mq(tab) {
-        width: calc(50vw - 60px);
-      }
 
       .c-title--sub {
         margin-left: 15px;
@@ -92,16 +78,6 @@
 
         .c-text--sub {
           margin: 3px 11px 15px 10px;
-        }
-      }
-
-      // Eat In下の白線
-      > .c-title--underline {
-        &::after {
-          width: 33.89px;
-          height: 4px;
-          bottom: -2rem;
-          left: -7rem;
         }
       }
     }

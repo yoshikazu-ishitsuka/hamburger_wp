@@ -149,6 +149,13 @@ ul {
   width: 100%;
   height: 8%;
 }
+@media screen and (min-width: 1025px) {
+  .l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .l-header__top {
   display: flex;
 }
@@ -163,7 +170,8 @@ ul {
 }
 @media screen and (min-width: 1025px) {
   .l-header__top__logo {
-    margin-left: 4%;
+    font-size: 64px;
+    margin-left: 20%;
   }
 }
 .l-header__top__menu {
@@ -187,6 +195,12 @@ ul {
 .l-header .p-form-search {
   padding-bottom: 40px;
 }
+@media screen and (min-width: 1025px) {
+  .l-header .p-form-search {
+    margin-right: 2rem;
+    padding-bottom: 0;
+  }
+}
 .l-header .p-form-search .c-form-search {
   display: flex;
   justify-content: center;
@@ -204,6 +218,7 @@ ul {
     justify-content: flex-end;
     margin-left: auto;
     margin-right: 2%;
+    width: 35vw;
   }
 }
 .l-header .p-form-search .c-form-search .c-form-search__keyword {
@@ -243,17 +258,18 @@ ul {
     visibility: hidden;
   }
 }
+@media screen and (min-width: 1025px) {
+  .l-main .p-visual--main .c-title--main {
+    visibility: visible;
+    padding-left: 86px;
+  }
+}
 .l-main .p-visual--sub {
   list-style: none;
   width: 100%;
 }
 .l-main .p-visual--sub--takeOut {
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .l-main .p-visual--sub--takeOut {
-    width: calc(50vw - 60px);
-  }
 }
 .l-main .p-visual--sub--takeOut .c-title--sub {
   margin-left: 15px;
@@ -272,19 +288,8 @@ ul {
 .l-main .p-visual--sub--takeOut .sub-section .c-text--sub {
   margin: 3px 10px 15px;
 }
-.l-main .p-visual--sub--takeOut > .c-title--underline::after {
-  width: 2.118125rem;
-  height: 0.25rem;
-  bottom: -2rem;
-  right: 10.5rem;
-}
 .l-main .p-visual--sub--eatIn {
   position: relative;
-}
-@media screen and (min-width: 768px) {
-  .l-main .p-visual--sub--eatIn {
-    width: calc(50vw - 60px);
-  }
 }
 .l-main .p-visual--sub--eatIn .c-title--sub {
   margin-left: 15px;
@@ -302,12 +307,6 @@ ul {
 }
 .l-main .p-visual--sub--eatIn .sub-section .c-text--sub {
   margin: 3px 11px 15px 10px;
-}
-.l-main .p-visual--sub--eatIn > .c-title--underline::after {
-  width: 33.89px;
-  height: 4px;
-  bottom: -2rem;
-  left: -7rem;
 }
 .l-main .p-visual--sub--sentence {
   margin-bottom: 15px;
@@ -461,6 +460,16 @@ ul {
 .c-title--sub {
   font-size: 41px;
 }
+@media screen and (min-width: 768px) {
+  .c-title--sub {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-title--sub {
+    font-size: 50px;
+  }
+}
 .c-title--sentence {
   font-size: 22px;
 }
@@ -490,7 +499,7 @@ ul {
   font-weight: bold;
   color: #707070;
 }
-@media (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .c-title--sidebar {
     display: none;
   }
@@ -536,11 +545,30 @@ ul {
     margin-bottom: 40px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-visual--main {
+    height: 33.125rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+}
 @media screen and (min-width: 768px) {
   .p-visual--sub {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
+  }
+  .p-visual--sub > li {
+    display: flex;
+    flex: 1 0 auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--sub {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 131px;
   }
   .p-visual--sub > li {
     display: flex;
@@ -561,8 +589,32 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .p-visual--sub--takeOut {
-    margin: inherit;
+    width: calc(50vw - 60px);
     margin: 0 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--sub--takeOut {
+    width: calc(50vw - 151px);
+    margin: inherit;
+    margin-left: 111px;
+    margin-right: 80px;
+  }
+}
+.p-visual--sub--takeOut > .c-title--underline::after {
+  width: 2.118125rem;
+  height: 0.25rem;
+  bottom: -2rem;
+  right: 10.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-visual--sub--takeOut > .c-title--underline::after {
+    right: 11.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--sub--takeOut > .c-title--underline::after {
+    right: 13rem;
   }
 }
 .p-visual--sub--sentence {
@@ -585,8 +637,32 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .p-visual--sub--eatIn {
+    width: calc(50vw - 60px);
     margin: inherit;
     margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--sub--eatIn {
+    width: calc(50vw - 152px);
+    margin: inherit;
+    margin-right: 112px;
+  }
+}
+.p-visual--sub--eatIn > .c-title--underline::after {
+  width: 33.89px;
+  height: 4px;
+  bottom: -2rem;
+  left: -7rem;
+}
+@media screen and (min-width: 768px) {
+  .p-visual--sub--eatIn > .c-title--underline::after {
+    left: -7.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual--sub--eatIn > .c-title--underline::after {
+    left: -8.5rem;
   }
 }
 

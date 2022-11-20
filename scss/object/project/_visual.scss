@@ -9,12 +9,22 @@
     background-position: center;
     margin-bottom: 20px;
 
+    // ブレークポイント（タブレット）
     @include g.mq(tab) {
       margin-bottom: 40px;
+    }
+
+    // ブレークポイント（PC）
+    @include g.mq(pc) {
+      height: g.rem(530);
+      display: flex;
+      align-items: center;
+      margin-bottom: 120px;
     }
   }
 
   &--sub {
+    // ブレークポイント（タブレット）
     @include g.mq(tab) {
       display: flex;
       justify-content: space-around;
@@ -26,9 +36,20 @@
       }
     }
 
+    // ブレークポイント（PC）
+    @include g.mq(pc) {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 131px;
+
+      > li {
+        display: flex;
+        flex: 1 0 auto;
+      }
+    }
+
     &--takeOut {
       background-image: url(/images/front/burger-01-sp.png);
-      // background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       height: auto;
@@ -39,23 +60,50 @@
       justify-content: flex-end;
       gap: 4rem;
 
+      // ブレークポイント（タブレット）
       @include g.mq(tab) {
-        margin: inherit;
+        width: calc(50vw - 60px);
         margin: 0 40px;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        width: calc(50vw - 151px);
+        margin: inherit;
+        margin-left: 111px;
+        margin-right: 80px;
+      }
+
+      // Take out下の白線
+      > .c-title--underline {
+        &::after {
+          width: g.rem(33.89);
+          height: g.rem(4);
+          bottom: -2rem;
+          right: 10.5rem;
+
+          // ブレークポイント（タブレット）
+          @include g.mq(tab) {
+            right: 11.5rem;
+          }
+
+          // ブレークポイント（PC）
+          @include g.mq(pc) {
+            right: 13rem;
+          }
+        }
       }
     }
 
     &--sentence {
       height: g.rem(124);
       opacity: 0.8;
-      // margin: 0 10px;
       display: inline-block;
       height: auto;
     }
 
     &--eatIn {
       background-image: url(/images/front/burger-02-sp.png);
-      // background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       height: auto;
@@ -66,9 +114,38 @@
       justify-content: flex-end;
       gap: 4rem;
 
+      // ブレークポイント（タブレット）
       @include g.mq(tab) {
+        width: calc(50vw - 60px);
         margin: inherit;
         margin-right: 40px;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        width: calc(50vw - 152px);
+        margin: inherit;
+        margin-right: 112px;
+      }
+
+      // Eat In下の白線
+      > .c-title--underline {
+        &::after {
+          width: 33.89px;
+          height: 4px;
+          bottom: -2rem;
+          left: -7rem;
+
+          // ブレークポイント（タブレット）
+          @include g.mq(tab) {
+            left: -7.5rem;
+          }
+
+          // ブレークポイント（PC）
+          @include g.mq(pc) {
+            left: -8.5rem;
+          }
+        }
       }
     }
   }
