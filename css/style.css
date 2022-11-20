@@ -674,6 +674,13 @@ ul {
   position: relative;
   z-index: 1;
 }
+@media screen and (min-width: 1025px) {
+  .p-access .c-background--map {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+  }
+}
 .p-access--map::before {
   content: "";
   display: block;
@@ -688,9 +695,21 @@ ul {
     height: 100%;
   }
 }
+@media screen and (min-width: 1025px) {
+  .p-access--map::before {
+    width: 61%;
+  }
+}
 .p-access--map .c-title--access {
   padding-top: 40px;
   margin-left: 42px;
+}
+@media screen and (min-width: 1025px) {
+  .p-access--map .c-title--access {
+    font-size: 36px;
+    padding-top: 83px;
+    margin-left: 119px;
+  }
 }
 .p-access--map .c-title--underline::after {
   width: 4.5rem;
@@ -699,6 +718,12 @@ ul {
   left: -15.5rem;
   background-color: #ffffff;
 }
+@media screen and (min-width: 1025px) {
+  .p-access--map .c-title--underline::after {
+    left: -18.5rem;
+    bottom: -4.5rem;
+  }
+}
 .p-access--map .c-text--access {
   display: inline-block;
   height: auto;
@@ -706,6 +731,12 @@ ul {
   margin: 2.5rem 40px 51px;
   position: inherit;
   z-index: 3;
+}
+@media screen and (min-width: 1025px) {
+  .p-access--map .c-text--access {
+    width: 42%;
+    margin-top: 119px;
+  }
 }
 .p-access .c-background--overlay::after {
   position: absolute;
