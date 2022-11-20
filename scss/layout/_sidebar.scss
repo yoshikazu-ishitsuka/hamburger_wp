@@ -10,6 +10,11 @@
   top: 0;
   left: 100%;
 
+  // ブレークポイント（PC）
+  @include g.mq(pc) {
+    left: 81%;
+  }
+
   // l-sidebar__mainの親要素
   .l-sidebar {
     display: flex;
@@ -17,11 +22,21 @@
     height: 100vh;
     transition: 0.5s;
 
+    // ブレークポイント（PC）
+    @include g.mq(pc) {
+      height: auto;
+    }
+
     // ｘ印のspanセレクタのクラス
     .menu-close {
       display: flex;
       justify-content: flex-end;
       line-height: normal;
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        display: none;
+      }
     }
 
     // ｘ印の実装部分
@@ -58,6 +73,15 @@
           g.$color_f2ede9 56%,
           g.$color_f2ede9 100%
         );
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        width: 19vw;
+        background: inherit;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: g.$color_f2ede9;
       }
 
       .c-title--sidebar {
