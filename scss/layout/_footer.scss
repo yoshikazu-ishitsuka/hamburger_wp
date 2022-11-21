@@ -3,6 +3,8 @@
 
 .l-footer {
   text-align: center;
+  grid-area: footer;
+
   &--menu {
     display: flex;
     justify-content: center;
@@ -27,5 +29,5 @@
   }
 }
 .c-background--footer {
-  height: 9.375rem;
+  height: g.rem(150);
 }

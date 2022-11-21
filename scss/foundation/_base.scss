@@ -23,6 +23,13 @@ body {
 
   @include g.mq(pc) {
     width: 81%;
+    display: grid;
+    grid-template-rows: 11rem auto g.rem(150);
+    grid-template-columns: 81vw 1fr;
+    grid-template-areas:
+      " header sidebar "
+      " main   sidebar "
+      " footer footer ";
   }
 }
 

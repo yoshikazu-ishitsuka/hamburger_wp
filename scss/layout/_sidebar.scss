@@ -9,10 +9,12 @@
   position: absolute;
   top: 0;
   left: 100%;
+  grid-area: sidebar;
 
   // ブレークポイント（PC）
   @include g.mq(pc) {
     left: 81%;
+    position: inherit;
   }
 
   // l-sidebar__mainの親要素

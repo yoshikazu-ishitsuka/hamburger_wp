@@ -87,6 +87,10 @@ body {
 @media screen and (min-width: 1025px) {
   .wrapper {
     width: 81%;
+    display: grid;
+    grid-template-rows: 11rem auto 9.375rem;
+    grid-template-columns: 81vw 1fr;
+    grid-template-areas: " header sidebar " " main   sidebar " " footer footer ";
   }
 }
 
@@ -128,6 +132,7 @@ ul {
 
 .l-footer {
   text-align: center;
+  grid-area: footer;
 }
 .l-footer--menu {
   display: flex;
@@ -154,12 +159,14 @@ ul {
 .l-header {
   width: 100%;
   height: 8%;
+  grid-area: header;
 }
 @media screen and (min-width: 1025px) {
   .l-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: auto;
   }
 }
 .l-header__top {
@@ -255,6 +262,10 @@ ul {
 .l-main {
   height: auto;
   background-color: #fffdfa;
+  grid-area: main;
+}
+.l-main .p-visual--main {
+  grid-area: mainTop;
 }
 .l-main .p-visual--main .c-title--main {
   padding: 119px 134px 115px 25px;
@@ -273,6 +284,7 @@ ul {
 .l-main .p-visual--sub {
   list-style: none;
   width: 100%;
+  grid-area: mainMiddle;
 }
 .l-main .p-visual--sub--takeOut {
   position: relative;
@@ -319,6 +331,7 @@ ul {
 }
 .l-main .p-access {
   position: relative;
+  grid-area: mainBottom;
 }
 .l-main .p-access .c-background--map .c-title--access {
   position: inherit;
@@ -335,10 +348,12 @@ ul {
   position: absolute;
   top: 0;
   left: 100%;
+  grid-area: sidebar;
 }
 @media screen and (min-width: 1025px) {
   .side-wrapper {
     left: 81%;
+    position: inherit;
   }
 }
 .side-wrapper .l-sidebar {
@@ -632,7 +647,7 @@ ul {
 }
 @media screen and (min-width: 1025px) {
   .p-visual--sub--takeOut {
-    width: calc(50vw - 151px);
+    width: calc(40.5vw - 151px);
     margin: inherit;
     margin-left: 111px;
     margin-right: 80px;
@@ -681,7 +696,7 @@ ul {
 }
 @media screen and (min-width: 1025px) {
   .p-visual--sub--eatIn {
-    width: calc(50vw - 152px);
+    width: calc(40.5vw - 152px);
     margin: inherit;
     margin-right: 112px;
   }
@@ -773,6 +788,7 @@ ul {
   .p-access--map .c-text--access {
     width: 42%;
     margin-top: 119px;
+    margin: 2.5rem 40px 1.3125rem;
   }
 }
 .p-access .c-background--overlay::after {

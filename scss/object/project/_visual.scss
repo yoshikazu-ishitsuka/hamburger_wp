@@ -68,7 +68,7 @@
 
       // ブレークポイント（PC）
       @include g.mq(pc) {
-        width: calc(50vw - 151px);
+        width: calc(40.5vw - 151px);
         margin: inherit;
         margin-left: 111px;
         margin-right: 80px;
@@ -123,7 +123,7 @@
 
       // ブレークポイント（PC）
       @include g.mq(pc) {
-        width: calc(50vw - 152px);
+        width: calc(40.5vw - 152px);
         margin: inherit;
         margin-right: 112px;
       }
