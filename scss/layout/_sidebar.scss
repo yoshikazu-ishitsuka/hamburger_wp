@@ -91,6 +91,10 @@
           // メニュータイトルの一番上のバーガー文字への指定
           &:first-of-type {
             margin-top: 212px;
+
+            @include g.mq(pc) {
+              margin-top: g.rem(85);
+            }
           }
           // バーガー,サイド,ドリンクへの指定
           margin: 3rem 0 0 20%;
@@ -98,6 +102,10 @@
           // ブレークポイント（タブレット）
           @include g.mq(tab) {
             margin: 3rem 0 0 61%;
+          }
+
+          @include g.mq(pc) {
+            margin: 3rem 0 0 20%;
           }
         }
       }
@@ -109,6 +117,10 @@
         // ブレークポイント（タブレット）
         @include g.mq(tab) {
           margin: 3rem 0 0 63%;
+        }
+
+        @include g.mq(pc) {
+          margin: 3rem 0 0 26%;
         }
 
         > li {

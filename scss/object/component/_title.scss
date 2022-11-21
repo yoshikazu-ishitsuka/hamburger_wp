@@ -66,6 +66,8 @@
 
     @include g.mq(pc) {
       display: inherit;
+      margin-top: 82px;
+      margin-left: 46px;
     }
 
     &__menu {
