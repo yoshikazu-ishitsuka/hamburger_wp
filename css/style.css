@@ -392,9 +392,6 @@ ul {
     background-color: #f2ede9;
   }
 }
-.side-wrapper .l-sidebar__main .c-title--sidebar {
-  display: none;
-}
 .side-wrapper .l-sidebar__main .c-title--sidebar__menu {
   margin: 3rem 0 0 20%;
 }
@@ -435,6 +432,11 @@ ul {
 }
 .c-background--footer {
   background-image: url(/images/common/footer.png);
+}
+@media screen and (min-width: 1025px) {
+  .c-background--footer {
+    width: 100vw;
+  }
 }
 
 .c-button--menu {
@@ -529,9 +531,14 @@ ul {
   font-weight: bold;
   color: #707070;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
   .c-title--sidebar {
     display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-title--sidebar {
+    display: inherit;
   }
 }
 .c-title--sidebar__menu {
