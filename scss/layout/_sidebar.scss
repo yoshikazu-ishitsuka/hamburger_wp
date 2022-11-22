@@ -57,6 +57,7 @@
     > &__main {
       // display: none;
       // transform: scaleX(0);
+
       width: 0;
       height: 100%;
       overflow: scroll;
@@ -71,9 +72,9 @@
       // ブレークポイント（タブレット）
       @include g.mq(tab) {
         // display: none;
-        // width: 0;
         // transform: scaleX(0);
 
+        width: 0;
         background: linear-gradient(
           to right,
           rgba(95, 93, 91, 0) 0%,
@@ -87,6 +88,7 @@
       @include g.mq(pc) {
         // transform: scaleX(1);
         // display: block;
+
         width: 19vw;
         background: inherit;
         overflow-x: hidden;

@@ -50,8 +50,8 @@
       .c-button--menu {
         font-size: 20px;
 
-        // ブレークポイント（タブレット）
-        @include g.mq(tab) {
+        // ブレークポイント（520px以上なら）
+        @media (min-width: 520px) {
           font-size: 34px;
         }
       }

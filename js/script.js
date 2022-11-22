@@ -23,14 +23,6 @@ $(function () {
 });
 
 // sidebarのｘボタン押下時の処理
-// $(function () {
-//   if (window.matchMedia("(min-width: 768px)").matches) {
-
-//   } else if (window.matchMedia("(min-width: 1025px)").matches) {
-
-//   }
-// });
-
 $(function () {
   $(".menu-close.js-button").click(function () {
     $(".u-background--overlay").toggleClass("js-height");
@@ -45,10 +37,26 @@ $(function () {
     $("body").css({ position: "static", overflow: "inherit" });
     // $(".l-sidebar").css({ width: "auto" });
     $(".l-sidebar__main").css({
-      width: "100%",
+      width: "19vw",
       // display: "inherit",
       // "transition-property": "width",
       // "transition-duration": "0.5s",
     });
   });
 });
+
+// $(function () {
+//   if (window.matchMedia("(max-width: 600px)").matches) {
+//     $(".l-sidebar__main").css({ width: "0" });
+//   } else if (
+//     window.matchMedia("(max-width: 767px) and (min-width: 601px)").matches
+//   ) {
+//     $(".l-sidebar__main").css({ width: "0" });
+//   } else if (
+//     window.matchMedia("(max-width: 1024px) and (min-width: 768px)").matches
+//   ) {
+//     $(".l-sidebar__main").css({ width: "0" });
+//   } else if (window.matchMedia("(min-width: 1025px)").matches) {
+//     $(".l-sidebar__main").css({ width: "19vw" });
+//   }
+// });
