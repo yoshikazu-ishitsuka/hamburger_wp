@@ -235,7 +235,7 @@ ul {
   }
 }
 .l-header .p-form-search .c-form-search .c-form-search__keyword {
-  width: 61%;
+  width: 70%;
   height: 2.875rem;
   border-radius: 10px;
   border-width: 1px;
@@ -556,6 +556,7 @@ ul {
   color: #ffffff;
 }
 .c-title--sidebar {
+  display: none;
   font-size: 34px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
