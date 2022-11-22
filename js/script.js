@@ -27,20 +27,11 @@ $(function () {
   $(".menu-close.js-button").click(function () {
     $(".u-background--overlay").toggleClass("js-height");
     $(".l-sidebar").removeClass("is-open");
-    $(".l-sidebar").css({
-      // "transition-property": "width",
-      // "transition-duration": "0.5s",
-    });
-    // $(".side-wrapper").css({ "z-index": "-1" });
     $(".side-wrapper").css({ "z-index": "-1", left: "100%" });
     $(".wrapper").css({ position: "static" });
     $("body").css({ position: "static", overflow: "inherit" });
-    // $(".l-sidebar").css({ width: "auto" });
     $(".l-sidebar__main").css({
-      width: "19vw",
-      // display: "inherit",
-      // "transition-property": "width",
-      // "transition-duration": "0.5s",
+      width: "19vw", // 問題の箇所 //
     });
   });
 });
