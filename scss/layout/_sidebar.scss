@@ -55,9 +55,6 @@
 
     // サイドバーのメニューの一覧があるメイン部分
     > &__main {
-      // display: none;
-      // transform: scaleX(0);
-
       width: 0;
       height: 100%;
       overflow: scroll;
@@ -68,12 +65,15 @@
         g.$color_f2ede9 12.5%,
         g.$color_f2ede9 100%
       );
+      transition: 0.5s;
+
+      &.is-open {
+        width: 100vw;
+        transition: 0.5s;
+      }
 
       // ブレークポイント（タブレット）
       @include g.mq(tab) {
-        // display: none;
-        // transform: scaleX(0);
-
         width: 0;
         background: linear-gradient(
           to right,
@@ -86,14 +86,12 @@
 
       // ブレークポイント（PC）
       @include g.mq(pc) {
-        // transform: scaleX(1);
-        // display: block;
-
         width: 19vw;
         background: inherit;
         overflow-x: hidden;
         overflow-y: scroll;
         background-color: g.$color_f2ede9;
+        transition-duration: 0s;
       }
 
       .c-title--sidebar {
