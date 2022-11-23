@@ -183,8 +183,13 @@ ul {
 }
 @media screen and (min-width: 1025px) {
   .l-header__top__logo {
-    font-size: 64px;
+    font-size: 52px;
     margin-left: 20%;
+  }
+}
+@media (min-width: 1280px) {
+  .l-header__top__logo {
+    font-size: 64px;
   }
 }
 .l-header__top__menu {
@@ -812,7 +817,7 @@ ul {
 @media screen and (min-width: 1025px) {
   .p-access--map .c-text--access {
     width: 42%;
-    margin-top: 119px;
+    padding-top: 5rem;
     margin: 2.5rem 40px 1.3125rem;
   }
 }

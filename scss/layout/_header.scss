@@ -31,8 +31,12 @@
 
       // ブレークポイント（PC）
       @include g.mq(pc) {
-        font-size: 64px;
+        font-size: 52px;
         margin-left: 20%;
+      }
+
+      @media (min-width: 1280px) {
+        font-size: 64px;
       }
     }
 
