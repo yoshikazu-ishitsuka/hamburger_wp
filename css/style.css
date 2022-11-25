@@ -607,10 +607,6 @@ ul {
   color: #707070;
 }
 
-.c-display--inline-b {
-  display: inline-block;
-}
-
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
   background-size: cover;
