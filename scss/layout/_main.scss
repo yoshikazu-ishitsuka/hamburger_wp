@@ -13,11 +13,6 @@
     .c-title--main {
       padding: 119px 134px 115px 25px;
 
-      // ブレークポイント（タブレット）
-      @include g.mq(tab) {
-        visibility: hidden;
-      }
-
       // ブレークポイント（PC）
       @include g.mq(pc) {
         visibility: visible;
