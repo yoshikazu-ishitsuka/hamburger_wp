@@ -224,6 +224,12 @@ ul {
   justify-content: center;
   margin-left: 24px;
 }
+@media (min-width: 520px) {
+  .l-header .p-form-search .c-form-search {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .l-header .p-form-search .c-form-search {
     justify-content: inherit;

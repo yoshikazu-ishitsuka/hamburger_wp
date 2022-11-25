@@ -78,6 +78,12 @@
       justify-content: center;
       margin-left: 24px;
 
+      // ブレークポイント（520px以上なら）
+      @media (min-width: 520px) {
+        width: 70%;
+        margin: 0 auto;
+      }
+
       // ブレークポイント（タブレット）
       @include g.mq(tab) {
         justify-content: inherit;
