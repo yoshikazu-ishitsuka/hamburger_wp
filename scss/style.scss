@@ -24,10 +24,12 @@
 @use "object/component/flex";
 @use "object/component/title";
 @use "object/component/text";
+@use "object/component/form";
 
 // Project
 @use "object/project/visual";
 @use "object/project/access";
+@use "object/project/search";
 
 // Utility
 @use "object/utility/overlay";
