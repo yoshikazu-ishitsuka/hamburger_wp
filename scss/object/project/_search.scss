@@ -67,6 +67,10 @@
       background-color: #f2ede9;
       border-radius: g.$radius;
       border-width: g.$bd_width;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
