@@ -19,18 +19,25 @@ $(function () {
 $(function () {
   $(".menu-close.js-button").click(function () {
     $(".u-background--overlay").toggleClass("js-height");
-    $(".l-sidebar__main").removeClass("is-open");
     $(".side-wrapper").css({
       "z-index": "-1",
       left: "100%",
     });
+    $(".l-sidebar__main").css({
+      "transition-duration": "0.5s",
+    });
     $(".wrapper").css({ position: "static" });
     $("body").css({ position: "static", overflow: "inherit" });
+    $(".l-sidebar__main").removeClass("is-open");
   });
 });
 
 //サイドバー表示中にブラウザをレスポンシブした時の処理（ｘボタン押下時と同じスタイルを適用）
 $(window).resize(function () {
+  $(".l-sidebar__main").css({
+    "transition-duration": "0s",
+  });
+
   if (window.matchMedia("(min-width: 1025px)").matches) {
     $(".l-sidebar__main").removeClass("is-open");
     $(".u-background--overlay").removeClass("js-height");
