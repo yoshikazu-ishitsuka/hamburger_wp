@@ -21,6 +21,13 @@
       align-items: center;
       margin-bottom: 120px;
     }
+
+    &--archive {
+      background-image: url(/images/common/top_01.png);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
   }
 
   &--sub {

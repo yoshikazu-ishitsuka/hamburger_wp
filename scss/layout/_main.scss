@@ -7,7 +7,8 @@
   background-color: #fffdfa;
   grid-area: main;
 
-  .p-visual--main {
+  .p-visual--main,
+  .p-visual--main--archive {
     grid-area: mainTop;
 
     .c-title--main {

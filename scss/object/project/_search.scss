@@ -5,6 +5,10 @@
 .p-search--form {
   padding-bottom: 40px;
 
+  label {
+    display: none;
+  }
+
   // ブレークポイント（PC）
   @include g.mq(pc) {
     margin-right: 2rem;
