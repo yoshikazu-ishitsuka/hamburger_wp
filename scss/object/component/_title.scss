@@ -82,4 +82,11 @@
       color: g.$color_base;
     }
   }
+
+  &--under-text {
+    &::after {
+      content: "チーズバーガー";
+      font-size: 16px;
+    }
+  }
 }

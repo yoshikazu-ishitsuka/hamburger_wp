@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -554,6 +555,10 @@ ul {
   font-weight: bold;
   color: #707070;
 }
+.c-title--under-text::after {
+  content: "チーズバーガー";
+  font-size: 16px;
+}
 
 .c-text--sub {
   font-size: 16px;
@@ -574,6 +579,26 @@ ul {
   color: #707070;
 }
 
+.p-visual--archive {
+  position: relative;
+}
+.p-visual--main--archive {
+  background-image: url(/images/common/top_01.png);
+  background-size: inherit;
+  background-position: 32% -78%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.p-visual--main--archive .c-title--main {
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+.p-visual--main--archive .c-title--under-text::after {
+  position: absolute;
+  bottom: 5rem;
+}
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
   background-size: cover;
@@ -592,12 +617,6 @@ ul {
     align-items: center;
     margin-bottom: 120px;
   }
-}
-.p-visual--main--archive {
-  background-image: url(/images/common/top_01.png);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .p-visual--sub {
@@ -888,6 +907,16 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.u-background--overlay--archive::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 /* foundation */
