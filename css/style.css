@@ -232,16 +232,16 @@ ul {
   grid-area: main;
 }
 .l-main .p-visual--main,
-.l-main .p-visual--main--archive {
+.l-main .p-visual__archive--main {
   grid-area: mainTop;
 }
 .l-main .p-visual--main .c-title--main,
-.l-main .p-visual--main--archive .c-title--main {
+.l-main .p-visual__archive--main .c-title--main {
   padding: 119px 134px 115px 25px;
 }
 @media screen and (min-width: 1025px) {
   .l-main .p-visual--main .c-title--main,
-.l-main .p-visual--main--archive .c-title--main {
+.l-main .p-visual__archive--main .c-title--main {
     visibility: visible;
     padding-left: 86px;
   }
@@ -559,6 +559,9 @@ ul {
   content: "チーズバーガー";
   font-size: 16px;
 }
+.c-title--archive {
+  font-size: 28px;
+}
 
 .c-text--sub {
   font-size: 16px;
@@ -578,26 +581,30 @@ ul {
   font-family: "M PLUS 1p", sans-serif;
   color: #707070;
 }
-
-.p-visual--archive {
-  position: relative;
+.c-text--archive {
+  font-size: 16px;
 }
-.p-visual--main--archive {
+
+.p-visual__archive--main {
   background-image: url(/images/common/top_01.png);
   background-size: inherit;
   background-position: 32% -78%;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  position: relative;
 }
-.p-visual--main--archive .c-title--main {
+.p-visual__archive--main .c-title--main {
   position: relative;
   display: flex;
   z-index: 2;
 }
-.p-visual--main--archive .c-title--under-text::after {
+.p-visual__archive--main .c-title--under-text::after {
   position: absolute;
   bottom: 5rem;
+}
+.p-visual__archive--sentence .c-title--archive {
+  margin: 30px 101px 30px 22px;
 }
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);

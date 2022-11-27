@@ -4,29 +4,36 @@
 // main内の画像関連についての設定
 .p-visual {
   // archiveページの設定
-  &--archive {
-    position: relative;
-  }
+  &__archive {
+    // position: relative;
 
-  &--main--archive {
-    background-image: url(/images/common/top_01.png);
-    background-size: inherit;
-    background-position: 32% -78%;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-
-    .c-title--main {
-      position: relative;
+    &--main {
+      background-image: url(/images/common/top_01.png);
+      background-size: inherit;
+      background-position: 32% -78%;
+      margin-bottom: 20px;
       display: flex;
-      z-index: 2;
+      align-items: center;
+      position: relative;
+
+      .c-title--main {
+        position: relative;
+        display: flex;
+        z-index: 2;
+      }
+
+      .c-title--under-text {
+        &::after {
+          position: absolute;
+          // display: inline-block;
+          bottom: 5rem;
+        }
+      }
     }
 
-    .c-title--under-text {
-      &::after {
-        position: absolute;
-        // display: inline-block;
-        bottom: 5rem;
+    &--sentence {
+      .c-title--archive {
+        margin: 30px 101px 30px 22px;
       }
     }
   }
