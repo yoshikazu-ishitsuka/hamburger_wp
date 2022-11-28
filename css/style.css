@@ -606,6 +606,12 @@ ul {
 .p-visual__archive--sentence .c-title--archive {
   margin: 30px 101px 30px 22px;
 }
+.p-visual__archive--sentence .c-text--archive {
+  height: auto;
+  width: 89%;
+  text-align: justify;
+  margin: 30px 18px 19px 22px;
+}
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
   background-size: cover;
