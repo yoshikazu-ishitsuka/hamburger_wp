@@ -1,0 +1,22 @@
+// _global.scssの読み込み
+@use "../../foundation/global" as g;
+
+.p-card__menu {
+  display: flex;
+  flex-direction: column;
+  min-height: g.rem(585);
+  // height: 100%;
+  // background-image: url(/images/common/img_02.png);
+
+  &--image {
+    // height: 39%;
+    min-height: g.rem(230);
+    // background-size: cover;
+    // background-position: left;
+  }
+
+  &--caption {
+    // height: 61%;
+    min-height: g.rem(355);
+  }
+}
