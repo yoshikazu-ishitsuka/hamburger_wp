@@ -421,6 +421,9 @@ ul {
 .c-background-color--white {
   background-color: #fff;
 }
+.c-background-color--card {
+  background-color: #3c2b1c;
+}
 .c-background--map {
   background-image: url(/images/front/map-sp-full.png);
   background-repeat: no-repeat;
@@ -902,6 +905,18 @@ ul {
 }
 .p-search--form .c-form-search .c-form-search__submit:hover {
   cursor: pointer;
+}
+
+.p-card__menu {
+  display: flex;
+  flex-direction: column;
+  min-height: 36.5625rem;
+}
+.p-card__menu--image {
+  min-height: 14.375rem;
+}
+.p-card__menu--caption {
+  min-height: 22.1875rem;
 }
 
 .u-background--overlay::after {

@@ -2,14 +2,14 @@
 @use "../../foundation/global" as g;
 
 .c-background {
-  &-color {
-    &--base {
-      background-color: #fff7ef;
-    }
-
-    &--white {
-      background-color: #fff;
-    }
+  &-color--base {
+    background-color: #fff7ef;
+  }
+  &-color--white {
+    background-color: #fff;
+  }
+  &-color--card {
+    background-color: #3c2b1c;
   }
 
   &--map {
