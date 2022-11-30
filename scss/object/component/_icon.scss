@@ -19,3 +19,13 @@
     cursor: pointer;
   }
 }
+
+.c-icon--prev {
+  background-image: url(/images/common/prev.png);
+  background-repeat: no-repeat;
+}
+
+.c-icon--next {
+  background-image: url(/images/common/next.png);
+  background-repeat: no-repeat;
+}
