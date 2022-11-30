@@ -27,4 +27,16 @@
   &--archive {
     font-size: 16px;
   }
+
+  &--card {
+    font-size: 16px;
+    font-weight: normal;
+    color: g.$color_white;
+  }
+
+  &--pagination {
+    font-size: 16px;
+    font-weight: normal;
+    color: g.$color_base;
+  }
 }
