@@ -446,6 +446,13 @@ ul {
   cursor: pointer;
   color: #707070;
 }
+.c-button--archive {
+  cursor: pointer;
+  background-color: #fff;
+  color: #707070;
+  text-align: center;
+  border-radius: 20px;
+}
 
 .c-font-color--base {
   color: #707070;
@@ -483,6 +490,16 @@ ul {
   font-weight: 900;
   font-style: normal;
   cursor: pointer;
+}
+
+.c-icon--prev {
+  background-image: url(/images/common/prev.png);
+  background-repeat: no-repeat;
+}
+
+.c-icon--next {
+  background-image: url(/images/common/next.png);
+  background-repeat: no-repeat;
 }
 
 .c-flex {
@@ -565,6 +582,16 @@ ul {
 .c-title--archive {
   font-size: 28px;
 }
+.c-title--card {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.c-title--subheading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
 
 .c-text--sub {
   font-size: 16px;
@@ -586,6 +613,16 @@ ul {
 }
 .c-text--archive {
   font-size: 16px;
+}
+.c-text--card {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.c-text--pagination {
+  font-size: 16px;
+  font-weight: normal;
+  color: #707070;
 }
 
 .p-visual__archive--main {
@@ -614,6 +651,28 @@ ul {
   width: 89%;
   text-align: justify;
   margin: 30px 18px 19px 22px;
+}
+.p-visual__archive .pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 20px;
+  margin-bottom: 31px;
+}
+.p-visual__archive .pagination .prev-link,
+.p-visual__archive .pagination .next-link {
+  text-decoration: none;
+  display: flex;
+}
+.p-visual__archive .pagination .prev-link .c-icon--prev {
+  background-position: 0px;
+  width: 30px;
+}
+.p-visual__archive .pagination > .next-link {
+  flex-direction: row-reverse;
+}
+.p-visual__archive .pagination > .next-link .c-icon--next {
+  background-position: 12px;
+  width: 30px;
 }
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
@@ -911,12 +970,38 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 36.5625rem;
+  margin-right: 18.9px;
+  margin-left: 20px;
+  margin-bottom: 20.9px;
 }
 .p-card__menu--image {
   min-height: 14.375rem;
 }
 .p-card__menu--caption {
   min-height: 22.1875rem;
+}
+.p-card__menu--caption .c-title--card {
+  margin: 31.5px auto 24px 17px;
+}
+.p-card__menu--caption .c-title--subheading {
+  margin-bottom: 10px;
+  margin-left: 17px;
+}
+.p-card__menu--caption .c-text--card {
+  width: 15.375rem;
+  height: auto;
+  margin: auto 73.1px 40px 17px;
+}
+.p-card__menu--caption .c-button--archive {
+  width: 10.1875rem;
+  height: 2.625rem;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto 93px 43.7px 79.9px;
+}
+
+.p-card__menu:last-of-type {
+  margin-bottom: 60.4px;
 }
 
 .u-background--overlay::after {
