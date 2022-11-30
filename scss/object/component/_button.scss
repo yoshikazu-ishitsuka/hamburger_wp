@@ -6,4 +6,12 @@
     cursor: pointer;
     color: g.$color_base;
   }
+
+  &--archive {
+    cursor: pointer;
+    background-color: #fff;
+    color: g.$color_base;
+    text-align: center;
+    border-radius: g.$card_button;
+  }
 }
