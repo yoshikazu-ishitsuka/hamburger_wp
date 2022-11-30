@@ -43,6 +43,36 @@
         margin: 30px 18px 19px 22px;
       }
     }
+
+    // l-main内下部のページネーション部分
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      margin: auto 20px;
+      margin-bottom: 31px;
+
+      .prev-link,
+      .next-link {
+        text-decoration: none;
+        display: flex;
+      }
+
+      .prev-link {
+        .c-icon--prev {
+          background-position: 0px;
+          width: 30px;
+        }
+      }
+
+      > .next-link {
+        flex-direction: row-reverse;
+
+        .c-icon--next {
+          background-position: 12px;
+          width: 30px;
+        }
+      }
+    }
   }
 
   &--main {
