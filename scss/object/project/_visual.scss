@@ -5,8 +5,6 @@
 .p-visual {
   // archiveページの設定
   &__archive {
-    // position: relative;
-
     &--main {
       background-image: url(/images/common/top_01.png);
       background-size: inherit;
@@ -16,17 +14,39 @@
       align-items: center;
       position: relative;
 
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        background-position: 47% -77%;
+      }
+
       .c-title--main {
         position: relative;
         display: flex;
         z-index: 2;
+
+        // ブレークポイント（スマートフォン）
+        @include g.mq(sp) {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        // ブレークポイント（タブレット）
+        @include g.mq(tab) {
+          font-size: 60px;
+        }
       }
 
       .c-title--under-text {
         &::after {
           position: absolute;
-          // display: inline-block;
           bottom: 5rem;
+
+          // ブレークポイント（スマートフォン）
+          @include g.mq(sp) {
+            position: inherit;
+            bottom: 0;
+          }
         }
       }
     }
