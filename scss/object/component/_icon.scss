@@ -7,6 +7,16 @@
     background-image: url(/images/common/search.png);
     background-repeat: no-repeat;
   }
+
+  &--current-page {
+    background-image: url(/images/common/page.png);
+    background-repeat: no-repeat;
+
+    // ブレークポイント（タブレット）
+    @media (max-width: 599px) {
+      display: none;
+    }
+  }
 }
 
 // 閉じるボタン
