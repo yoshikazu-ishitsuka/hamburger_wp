@@ -4,20 +4,34 @@
 .p-card__menu {
   display: flex;
   flex-direction: column;
-  min-height: g.rem(585);
+  // min-height: g.rem(585);
   margin-right: 18.9px;
   margin-left: 20px;
   margin-bottom: 20.9px;
   // background-image: url(/images/common/img_02.png);
 
+  @include g.mq(tab) {
+    flex-direction: row;
+  }
+
   &--image {
     min-height: g.rem(230);
     // background-size: cover;
     // background-position: left;
+
+    @include g.mq(tab) {
+      object-fit: cover;
+      object-position: 42%;
+      width: 50%;
+    }
   }
 
   &--caption {
     min-height: g.rem(355);
+
+    @include g.mq(tab) {
+      width: 50%;
+    }
 
     .c-title--card {
       margin: 31.5px auto 24px 17px;
