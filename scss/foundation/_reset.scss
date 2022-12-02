@@ -68,3 +68,11 @@ button {
   text-align: inherit;
   text-transform: inherit; /* 2 */
 }
+
+figure {
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
