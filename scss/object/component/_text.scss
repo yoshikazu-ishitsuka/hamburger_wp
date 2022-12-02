@@ -38,5 +38,10 @@
     font-size: 16px;
     font-weight: normal;
     color: g.$color_base;
+
+    // ブレークポイント（タブレット）
+    @include g.mq(tab) {
+      visibility: hidden;
+    }
   }
 }
