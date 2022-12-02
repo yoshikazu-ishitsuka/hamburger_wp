@@ -76,3 +76,11 @@ figure {
   padding-inline-start: 0px;
   padding-inline-end: 0px;
 }
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
