@@ -54,6 +54,12 @@
     &--sentence {
       .c-title--archive {
         margin: 30px 101px 30px 22px;
+
+        // ブレークポイント（タブレット）
+        @include g.mq(tab) {
+          margin-top: 36px;
+          margin-left: 42px;
+        }
       }
 
       .c-text--archive {
@@ -61,6 +67,11 @@
         width: 89%;
         text-align: justify;
         margin: 30px 18px 19px 22px;
+
+        // ブレークポイント（タブレット）
+        @include g.mq(tab) {
+          margin: 25px 35px 37px 42px;
+        }
       }
     }
 
