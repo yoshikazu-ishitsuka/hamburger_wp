@@ -512,6 +512,15 @@ ul {
   background-image: url(/images/common/search.png);
   background-repeat: no-repeat;
 }
+.c-img--current-page {
+  background-image: url(/images/common/page.png);
+  background-repeat: no-repeat;
+}
+@media (max-width: 599px) {
+  .c-img--current-page {
+    display: none;
+  }
+}
 
 .c-xmark::before {
   content: "\f00d";
@@ -653,6 +662,11 @@ ul {
   font-weight: normal;
   color: #707070;
 }
+@media screen and (min-width: 768px) {
+  .c-text--pagination {
+    visibility: hidden;
+  }
+}
 
 .p-visual__archive--main {
   background-image: url(/images/common/top_01.png);
@@ -725,6 +739,10 @@ ul {
 .p-visual__archive .pagination .next-link {
   text-decoration: none;
   display: flex;
+}
+.p-visual__archive .pagination .prev-link .c-img--current-page {
+  width: 7rem;
+  background-position: center;
 }
 .p-visual__archive .pagination .prev-link .c-icon--prev {
   background-position: 0px;
