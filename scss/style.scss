@@ -25,12 +25,14 @@
 @use "object/component/title";
 @use "object/component/text";
 @use "object/component/form";
+@use "object/component/boder";
 
 // Project
 @use "object/project/visual";
 @use "object/project/access";
 @use "object/project/search";
 @use "object/project/card";
+@use "object/project/pagination";
 
 // Utility
 @use "object/utility/overlay";

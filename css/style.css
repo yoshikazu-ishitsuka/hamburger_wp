@@ -665,6 +665,10 @@ ul {
   }
 }
 
+.c-border {
+  border: solid 1px #707070;
+}
+
 .p-visual__archive--main {
   background-image: url(/images/common/top_01.png);
   background-size: inherit;
@@ -725,32 +729,6 @@ ul {
   .p-visual__archive--sentence .c-text--archive {
     margin: 25px 35px 37px 42px;
   }
-}
-.p-visual__archive .pagination {
-  display: flex;
-  justify-content: space-between;
-  margin: auto 20px;
-  margin-bottom: 31px;
-}
-.p-visual__archive .pagination .prev-link,
-.p-visual__archive .pagination .next-link {
-  text-decoration: none;
-  display: flex;
-}
-.p-visual__archive .pagination .prev-link .c-img--current-page {
-  width: 7rem;
-  background-position: center;
-}
-.p-visual__archive .pagination .prev-link .c-img--prev {
-  background-position: 0px;
-  width: 30px;
-}
-.p-visual__archive .pagination > .next-link {
-  flex-direction: row-reverse;
-}
-.p-visual__archive .pagination > .next-link .c-img--next {
-  background-position: 12px;
-  width: 30px;
 }
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
@@ -1127,6 +1105,59 @@ ul {
   .p-card__menu:last-of-type {
     margin-bottom: 105.5px;
   }
+}
+
+.p-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.1875rem;
+  width: 72vw;
+  margin: auto 20px;
+  margin-bottom: 31px;
+}
+@media screen and (min-width: 768px) {
+  .p-pagination {
+    margin: 0 auto;
+    margin-bottom: 31px;
+  }
+}
+.p-pagination .prev-link,
+.p-pagination .next-link {
+  text-decoration: none;
+  display: flex;
+}
+.p-pagination .prev-link .c-img--current-page {
+  width: 7rem;
+  background-position: center;
+}
+.p-pagination .prev-link .c-img--prev {
+  background-position: 0px;
+  width: 30px;
+}
+.p-pagination .pagination-link .number-list {
+  width: 52vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+.p-pagination .pagination-link .number-list .page-number:first-of-type {
+  color: #ffffff;
+  background-color: #3c2b1c;
+}
+.p-pagination .pagination-link .number-list .page-number {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 6px 13px;
+}
+.p-pagination > .next-link {
+  flex-direction: row-reverse;
+}
+.p-pagination > .next-link .c-img--next {
+  background-position: 12px;
+  width: 3rem;
 }
 
 .u-background--overlay::after {
