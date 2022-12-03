@@ -42,7 +42,7 @@
     }
 
     // ｘ印の実装部分
-    .c-xmark::before {
+    .c-img--xmark::before {
       display: inline-block;
       color: g.$color_base;
       margin-top: 25px;

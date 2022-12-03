@@ -370,7 +370,7 @@ ul {
     display: none;
   }
 }
-.side-wrapper .l-sidebar .c-xmark::before {
+.side-wrapper .l-sidebar .c-img--xmark::before {
   display: inline-block;
   color: #707070;
   margin-top: 25px;
@@ -521,21 +521,18 @@ ul {
     display: none;
   }
 }
-
-.c-xmark::before {
+.c-img--xmark::before {
   content: "\f00d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-style: normal;
   cursor: pointer;
 }
-
-.c-icon--prev {
+.c-img--prev {
   background-image: url(/images/common/prev.png);
   background-repeat: no-repeat;
 }
-
-.c-icon--next {
+.c-img--next {
   background-image: url(/images/common/next.png);
   background-repeat: no-repeat;
 }
@@ -744,14 +741,14 @@ ul {
   width: 7rem;
   background-position: center;
 }
-.p-visual__archive .pagination .prev-link .c-icon--prev {
+.p-visual__archive .pagination .prev-link .c-img--prev {
   background-position: 0px;
   width: 30px;
 }
 .p-visual__archive .pagination > .next-link {
   flex-direction: row-reverse;
 }
-.p-visual__archive .pagination > .next-link .c-icon--next {
+.p-visual__archive .pagination > .next-link .c-img--next {
   background-position: 12px;
   width: 30px;
 }
