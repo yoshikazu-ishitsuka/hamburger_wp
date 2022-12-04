@@ -7,11 +7,13 @@
   justify-content: space-between;
   align-items: center;
   height: g.rem(35);
-  width: 72vw;
-  margin: auto 20px;
+  width: 89vw;
+  margin: auto;
   margin-bottom: 31px;
 
   @include g.mq(tab) {
+    justify-content: space-around;
+    width: 72vw;
     margin: 0 auto;
     margin-bottom: 31px;
   }
@@ -26,6 +28,11 @@
     .c-img--current-page {
       width: 7rem;
       background-position: center;
+
+      // ブラウザ幅が767px以下の時
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
 
     .c-img--prev {
@@ -34,7 +41,19 @@
     }
   }
 
+  .c-text--pagination {
+    // ブレークポイント（タブレット）
+    @include g.mq(tab) {
+      visibility: hidden;
+    }
+  }
+
   .pagination-link {
+    // ブラウザ幅が767px以下の時
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     .number-list {
       width: 52vw;
       display: flex;
@@ -48,6 +67,8 @@
       }
 
       .page-number {
+        color: g.$color_base;
+        background-color: #fff;
         font-size: 16px;
         font-family: "Roboto", sans-serif;
         font-weight: bold;
