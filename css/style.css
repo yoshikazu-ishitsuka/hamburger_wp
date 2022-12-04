@@ -1048,7 +1048,7 @@ ul {
     margin-left: 43px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1280px) {
   .p-card__menu {
     margin: auto 100px 30px;
   }
@@ -1080,8 +1080,9 @@ ul {
     margin-left: 34.7px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1280px) {
   .p-card__menu--caption .c-title--card {
+    font-size: 25px;
     margin-top: 53px;
     margin-left: 63px;
     margin-bottom: 47px;
@@ -1096,8 +1097,9 @@ ul {
     margin-left: 34.7px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1280px) {
   .p-card__menu--caption .c-title--subheading {
+    font-size: 20px;
     margin-left: 63px;
     margin-bottom: 17px;
   }
@@ -1116,9 +1118,13 @@ ul {
 }
 @media screen and (min-width: 1025px) {
   .p-card__menu--caption .c-text--card {
+    width: 22rem;
+  }
+}
+@media (min-width: 1280px) {
+  .p-card__menu--caption .c-text--card {
     width: auto;
     margin-left: 63px;
-    margin-right: 104px;
     margin-bottom: 60px;
     text-align: justify;
   }
@@ -1135,11 +1141,13 @@ ul {
     margin: auto 99.8px 40px 114.7px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1280px) {
   .p-card__menu--caption .c-button--archive {
     width: 18.25rem;
     height: 4.75rem;
     border-radius: 40px;
+    margin: 0;
+    margin-left: 20%;
     margin-bottom: 60px;
   }
 }
