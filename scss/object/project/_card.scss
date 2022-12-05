@@ -16,9 +16,7 @@
     margin-left: 43px;
   }
 
-  // ブレークポイント（PC）
-  // @include g.mq(pc) {
-  // ブレークポイント（1280px）
+  // ブレークポイント（1280px以上）
   @media (min-width: 1280px) {
     margin: auto 100px 30px;
   }
@@ -51,9 +49,7 @@
         margin-left: 34.7px;
       }
 
-      // ブレークポイント（PC）
-      // @include g.mq(pc) {
-      // ブレークポイント（1280px）
+      // ブレークポイント（1280px以上）
       @media (min-width: 1280px) {
         font-size: 25px;
         margin-top: 53px;
@@ -71,9 +67,7 @@
         margin-left: 34.7px;
       }
 
-      // ブレークポイント（PC）
-      // @include g.mq(pc) {
-      // ブレークポイント（1280px）
+      // ブレークポイント（1280px以上）
       @media (min-width: 1280px) {
         font-size: 20px;
         margin-left: 63px;
@@ -86,6 +80,11 @@
       height: auto;
       margin: auto 73.1px 40px 17px;
 
+      // ブレークポイント（スマートフォン）
+      @include g.mq(sp) {
+        width: inherit;
+      }
+
       // ブレークポイント（タブレット）
       @include g.mq(tab) {
         width: g.rem(284);
@@ -95,15 +94,13 @@
 
       // ブレークポイント（PC）
       @include g.mq(pc) {
-        width: 22rem;
+        // width: 22rem;
       }
 
-      // ブレークポイント（1280px）
+      // ブレークポイント（1280px以上）
       @media (min-width: 1280px) {
         width: auto;
-        // height: auto;
         margin-left: 63px;
-        // margin-right: 104px;
         margin-bottom: 60px;
         text-align: justify;
       }
@@ -117,14 +114,29 @@
       font-weight: bold;
       margin: auto 93px 43.7px 79.9px;
 
+      // ブレークポイント（スマートフォン）
+      @include g.mq(sp) {
+        width: 13rem;
+        height: 3.5rem;
+        display: block;
+        margin: 0 auto;
+        // margin-top: 1rem;
+        // margin-left: 13rem;
+      }
+
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        width: g.rem(163);
+        height: g.rem(42);
+        margin: auto 93px 43.7px 79.9px;
+      }
+
       // ブレークポイント（850px以上）
       @media (min-width: 850px) {
         margin: auto 99.8px 40px 114.7px;
       }
 
-      // ブレークポイント（PC）
-      // @include g.mq(pc) {
-      // ブレークポイント（1280px）
+      // ブレークポイント（1280px以上）
       @media (min-width: 1280px) {
         width: g.rem(292);
         height: g.rem(76);
