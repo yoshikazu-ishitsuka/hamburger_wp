@@ -162,7 +162,7 @@
         margin: 0 40px;
       }
 
-      // ブレークポイント（1280px）
+      // ブレークポイント（1280px以上）
       @media (min-width: 1280px) {
         width: calc(40.5vw - 151px);
         margin: inherit;
@@ -224,7 +224,7 @@
         margin-right: 40px;
       }
 
-      // ブレークポイント（1280px）
+      // ブレークポイント（1280px以上）
       @media (min-width: 1280px) {
         width: calc(40.5vw - 152px);
         margin: inherit;
