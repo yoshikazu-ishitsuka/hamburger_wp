@@ -11,11 +11,17 @@
   margin: auto;
   margin-bottom: 31px;
 
+  // ブレークポイント（タブレット）
   @include g.mq(tab) {
-    justify-content: space-around;
+    justify-content: center;
     width: 72vw;
     margin: 0 auto;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
+  }
+
+  // ブレークポイント（PC）
+  @include g.mq(pc) {
+    margin-bottom: 64px;
   }
 
   .prev-link,
@@ -38,6 +44,7 @@
     .c-img--prev {
       background-position: 0px;
       width: 30px;
+      filter: brightness(0.5);
     }
   }
 
@@ -45,6 +52,7 @@
     // ブレークポイント（タブレット）
     @include g.mq(tab) {
       visibility: hidden;
+      width: 0;
     }
   }
 
@@ -55,11 +63,10 @@
     }
 
     .number-list {
-      width: 52vw;
       display: flex;
-      justify-content: space-around;
       align-items: center;
       gap: 15px;
+      margin: 0 8px;
 
       .page-number:first-of-type {
         color: #ffffff;
@@ -83,6 +90,7 @@
     .c-img--next {
       background-position: 12px;
       width: 3rem;
+      filter: brightness(0.5);
     }
   }
 }

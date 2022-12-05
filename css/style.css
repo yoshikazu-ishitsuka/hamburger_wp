@@ -1172,10 +1172,15 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .p-pagination {
-    justify-content: space-around;
+    justify-content: center;
     width: 72vw;
     margin: 0 auto;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-pagination {
+    margin-bottom: 64px;
   }
 }
 .p-pagination .prev-link,
@@ -1195,10 +1200,12 @@ ul {
 .p-pagination .prev-link .c-img--prev {
   background-position: 0px;
   width: 30px;
+  filter: brightness(0.5);
 }
 @media screen and (min-width: 768px) {
   .p-pagination .c-text--pagination {
     visibility: hidden;
+    width: 0;
   }
 }
 @media (max-width: 767px) {
@@ -1207,11 +1214,10 @@ ul {
   }
 }
 .p-pagination .pagination-link .number-list {
-  width: 52vw;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   gap: 15px;
+  margin: 0 8px;
 }
 .p-pagination .pagination-link .number-list .page-number:first-of-type {
   color: #ffffff;
@@ -1231,6 +1237,7 @@ ul {
 .p-pagination > .next-link .c-img--next {
   background-position: 12px;
   width: 3rem;
+  filter: brightness(0.5);
 }
 
 .u-background--overlay::after {
