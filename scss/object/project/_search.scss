@@ -57,6 +57,17 @@
       &:not(:placeholder-shown) {
         background-image: none;
       }
+
+      &::placeholder {
+        font-size: 16px;
+        color: g.$color_base;
+        font-weight: bold;
+        font-family: "M PLUS 1p", sans-serif;
+        text-align: center;
+        position: relative;
+        top: -2px;
+        // right: 3.5rem;
+      }
     }
 
     .c-img--magnifying-glass {

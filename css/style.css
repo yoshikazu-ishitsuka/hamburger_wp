@@ -1018,6 +1018,15 @@ ul {
 .p-search--form .c-form-search .c-form-search__keyword:not(:placeholder-shown) {
   background-image: none;
 }
+.p-search--form .c-form-search .c-form-search__keyword::placeholder {
+  font-size: 16px;
+  color: #707070;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+  text-align: center;
+  position: relative;
+  top: -2px;
+}
 .p-search--form .c-form-search .c-img--magnifying-glass {
   font-size: 24px;
   background-position: 16px 11px;
