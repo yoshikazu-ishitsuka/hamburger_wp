@@ -1123,7 +1123,7 @@ ul {
 }
 .p-card__menu--caption .c-text--card {
   height: auto;
-  margin: auto 73.1px 40px 17px;
+  margin: auto 17px 40px;
   text-align: justify;
 }
 @media screen and (min-width: 600px) {
@@ -1134,15 +1134,13 @@ ul {
 @media screen and (min-width: 768px) {
   .p-card__menu--caption .c-text--card {
     width: 17.75rem;
-    margin-left: 34.7px;
-    margin-bottom: 45px;
+    margin: auto 34.7px 45px;
   }
 }
 @media (min-width: 1280px) {
   .p-card__menu--caption .c-text--card {
     width: auto;
-    margin-left: 63px;
-    margin-bottom: 60px;
+    margin: auto 63px 60px;
     text-align: justify;
   }
 }
