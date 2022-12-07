@@ -18,11 +18,11 @@
   }
 
   // l-sidebar__mainの親要素
-  .l-sidebar {
+  // .l-sidebar {
+  .p-sideMenu {
     display: flex;
     justify-content: flex-end;
     height: 100vh;
-    // transition: 0.5s;
 
     // ブレークポイント（PC）
     @include g.mq(pc) {
@@ -65,7 +65,6 @@
         g.$color_f2ede9 12.5%,
         g.$color_f2ede9 100%
       );
-      // transition: 0.5s;
 
       &.is-open {
         width: 100vw;
