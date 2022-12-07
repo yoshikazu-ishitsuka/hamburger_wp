@@ -80,24 +80,14 @@
       margin: auto 17px 40px;
       text-align: justify;
 
-      // ブレークポイント（スマートフォン）
-      @include g.mq(sp) {
-        width: inherit;
-      }
-
       // ブレークポイント（タブレット）
       @include g.mq(tab) {
-        width: g.rem(284);
-        // margin-left: 34.7px;
-        // margin-bottom: 45px;
         margin: auto 34.7px 45px;
       }
 
       // ブレークポイント（1280px以上）
       @media (min-width: 1280px) {
         width: auto;
-        // margin-left: 63px;
-        // margin-bottom: 60px;
         margin: auto 63px 60px;
         text-align: justify;
       }

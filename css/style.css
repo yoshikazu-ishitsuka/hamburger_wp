@@ -1126,14 +1126,8 @@ ul {
   margin: auto 17px 40px;
   text-align: justify;
 }
-@media screen and (min-width: 600px) {
-  .p-card__menu--caption .c-text--card {
-    width: inherit;
-  }
-}
 @media screen and (min-width: 768px) {
   .p-card__menu--caption .c-text--card {
-    width: 17.75rem;
     margin: auto 34.7px 45px;
   }
 }
