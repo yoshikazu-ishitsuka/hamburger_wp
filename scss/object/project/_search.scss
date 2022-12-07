@@ -56,7 +56,7 @@
         color: g.$color_base;
         font-weight: bold;
         font-family: "M PLUS 1p", sans-serif;
-        text-align: center;
+        text-align: left;
         position: relative;
         top: -2px;
 
@@ -68,6 +68,7 @@
       // placeholderにfocusされている時
       &:focus {
         background-image: none;
+        text-indent: inherit;
         &::placeholder {
           color: transparent;
         }
@@ -81,6 +82,7 @@
 
     .c-img--magnifying-glass {
       font-size: 24px;
+      text-indent: 3rem;
       background-position: 16px 11px;
     }
 

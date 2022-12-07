@@ -1017,7 +1017,7 @@ ul {
   color: #707070;
   font-weight: bold;
   font-family: "M PLUS 1p", sans-serif;
-  text-align: center;
+  text-align: left;
   position: relative;
   top: -2px;
 }
@@ -1026,6 +1026,7 @@ ul {
 }
 .p-search--form .c-form-search .c-form-search__keyword:focus {
   background-image: none;
+  text-indent: inherit;
 }
 .p-search--form .c-form-search .c-form-search__keyword:focus::placeholder {
   color: transparent;
@@ -1035,6 +1036,7 @@ ul {
 }
 .p-search--form .c-form-search .c-img--magnifying-glass {
   font-size: 24px;
+  text-indent: 3rem;
   background-position: 16px 11px;
 }
 .p-search--form .c-form-search .c-form-search__submit {
@@ -1120,9 +1122,9 @@ ul {
   }
 }
 .p-card__menu--caption .c-text--card {
-  width: 15.375rem;
   height: auto;
   margin: auto 73.1px 40px 17px;
+  text-align: justify;
 }
 @media screen and (min-width: 600px) {
   .p-card__menu--caption .c-text--card {
