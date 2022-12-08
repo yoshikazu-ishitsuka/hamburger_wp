@@ -20,6 +20,7 @@
     }
   }
 
+  // archiveページ
   .p-visual__archive--main {
     grid-area: mainTop;
 
@@ -36,6 +37,15 @@
       @include g.mq(tab) {
         padding-left: 86px;
       }
+    }
+  }
+
+  // singleページ
+  .p-visual__single--main {
+    grid-area: mainTop;
+
+    .c-title--main {
+      padding: 91px 39px 91px 26px;
     }
   }
 
