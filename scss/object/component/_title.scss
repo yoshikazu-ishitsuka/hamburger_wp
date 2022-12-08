@@ -63,12 +63,12 @@
     font-weight: bold;
     color: g.$color_base;
 
-    // @media (max-width: 1024px)
-    // ブレークポイント（PC）
+    // ブレークポイント（タブレット）
     @include g.mq(tab) {
       display: none;
     }
 
+    // ブレークポイント（PC）
     @include g.mq(pc) {
       display: inherit;
       margin-top: 82px;
@@ -104,5 +104,11 @@
     font-size: 16px;
     font-weight: bold;
     color: g.$color_white;
+  }
+
+  &__single--h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "M PLUS 1p", sans-serif;
   }
 }
