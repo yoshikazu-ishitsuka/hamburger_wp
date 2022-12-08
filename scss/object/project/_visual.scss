@@ -9,7 +9,6 @@
       background-image: url(/images/common/top_01.png);
       background-size: inherit;
       background-position: 32% -78%;
-      margin-bottom: 20px;
       display: flex;
       align-items: center;
       position: relative;
@@ -92,6 +91,32 @@
     }
   }
   // archiveページの終わり
+
+  // singleページの始まり
+  &__single {
+    &--main {
+      background-image: url(/images/single/top_02.png);
+      background-size: 43rem;
+      background-position: center 40%;
+      background-repeat: no-repeat;
+      margin-bottom: 30px;
+      // display: flex;
+      // align-items: center;
+      // position: relative;
+    }
+
+    &--sentence {
+      .c-title--single {
+        margin-left: 20px;
+        margin-bottom: 30px;
+      }
+      .c-text--single {
+        margin: auto 20px 34px;
+      }
+    }
+  }
+
+  // singleページの終わり
 
   &--main {
     background-image: url(/images/front/main-visual-pc.png);

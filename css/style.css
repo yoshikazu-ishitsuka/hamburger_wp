@@ -275,6 +275,12 @@ ul {
     padding-left: 86px;
   }
 }
+.l-main .p-visual__single--main {
+  grid-area: mainTop;
+}
+.l-main .p-visual__single--main .c-title--main {
+  padding: 91px 39px 91px 26px;
+}
 .l-main .p-visual--sub {
   list-style: none;
   width: 100%;
@@ -627,6 +633,11 @@ ul {
   font-weight: bold;
   color: #ffffff;
 }
+.c-title__single--h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
 
 .c-text--sub {
   font-size: 16px;
@@ -659,6 +670,11 @@ ul {
   font-weight: normal;
   color: #707070;
 }
+.c-text--single {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "M PLUS 1p", sans-serif;
+}
 
 .c-border {
   border: solid 1px #707070;
@@ -668,7 +684,6 @@ ul {
   background-image: url(/images/common/top_01.png);
   background-size: inherit;
   background-position: 32% -78%;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   position: relative;
@@ -740,6 +755,20 @@ ul {
     width: auto;
     margin: auto 100px 70px;
   }
+}
+.p-visual__single--main {
+  background-image: url(/images/single/top_02.png);
+  background-size: 43rem;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.p-visual__single--sentence .c-title--single {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.p-visual__single--sentence .c-text--single {
+  margin: auto 20px 34px;
 }
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
