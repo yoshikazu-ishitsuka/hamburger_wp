@@ -205,7 +205,7 @@ ul {
 }
 .l-header__top__logo {
   font-size: 40px;
-  margin: 40px 0 38px 86px;
+  margin: 40px 0 38px auto;
 }
 @media screen and (min-width: 600px) {
   .l-header__top__logo {
@@ -638,6 +638,26 @@ ul {
   font-weight: bold;
   font-family: "M PLUS 1p", sans-serif;
 }
+.c-title__single--h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.c-title__single--h4 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.c-title__single--h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.c-title__single--h6 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
 
 .c-text--sub {
   font-size: 16px;
@@ -671,6 +691,11 @@ ul {
   color: #707070;
 }
 .c-text--single {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.c-text--blockquote {
   font-size: 16px;
   font-weight: normal;
   font-family: "M PLUS 1p", sans-serif;
@@ -763,12 +788,43 @@ ul {
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
-.p-visual__single--sentence .c-title--single {
+.p-visual__single--sentence {
+  margin-right: 20px;
   margin-left: 20px;
+}
+.p-visual__single--sentence .c-title__single--h2 {
   margin-bottom: 30px;
 }
 .p-visual__single--sentence .c-text--single {
-  margin: auto 20px 34px;
+  margin-bottom: 34px;
+}
+.p-visual__single--sentence .c-title__single--h3 {
+  margin-bottom: 31px;
+}
+.p-visual__single--sentence .c-title__single--h4 {
+  margin-bottom: 37px;
+}
+.p-visual__single--sentence .c-title__single--h5,
+.p-visual__single--sentence .c-title__single--h6 {
+  margin-bottom: 30px;
+}
+.p-visual__single--sentence .quotation--single {
+  background-color: #f5f5f5;
+  margin-bottom: 30px;
+}
+.p-visual__single--sentence .quotation--single .c-text--blockquote {
+  padding: 30px 16px 30px 20px;
+}
+.p-visual__single--sentence .quotation--single .citation--single {
+  display: inline-block;
+  font-style: normal;
+  padding-right: 51px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.p-visual__single--sentence .quotation--single .citation--single .citation-link {
+  color: #4a6c9b;
+  border-bottom: 2px solid #4a6c9b;
 }
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
