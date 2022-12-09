@@ -22,7 +22,8 @@
     // タイトル（Hamburger）の装飾
     &__logo {
       font-size: 40px;
-      margin: 40px 0 38px 86px;
+      margin: 40px 0 38px auto;
+      // margin: 40px 0 38px 86px;
 
       // ブレークポイント（スマートフォン）
       @include g.mq(sp) {
