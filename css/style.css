@@ -83,6 +83,8 @@ figure {
   margin-block-end: 0em;
   padding-inline-start: 0px;
   padding-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 a:-webkit-any-link {
@@ -700,6 +702,11 @@ ul {
   font-weight: normal;
   font-family: "M PLUS 1p", sans-serif;
 }
+.c-text--single-sub {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "M PLUS 1p", sans-serif;
+}
 
 .c-border {
   border: solid 1px #707070;
@@ -825,6 +832,49 @@ ul {
 .p-visual__single--sentence .quotation--single .citation--single .citation-link {
   color: #4a6c9b;
   border-bottom: 2px solid #4a6c9b;
+}
+.p-visual__single--sub {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.p-visual__single--sub .first-block__top--img {
+  margin-bottom: 30px;
+}
+.p-visual__single--sub .first-block__middle01 {
+  height: 15rem;
+  display: flex;
+  margin-bottom: 30px;
+}
+.p-visual__single--sub .first-block__middle01--img {
+  height: 60%;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+.p-visual__single--sub .first-block__middle01--text {
+  text-indent: 10px;
+  line-height: 26px;
+  overflow: hidden;
+}
+.p-visual__single--sub .first-block__middle02 {
+  height: 15rem;
+  display: flex;
+  margin-bottom: 30px;
+}
+.p-visual__single--sub .first-block__middle02--img {
+  height: 60%;
+  margin-left: 9px;
+  margin-bottom: 40px;
+}
+.p-visual__single--sub .first-block__middle02--text {
+  text-indent: 10px;
+  line-height: 26px;
+  overflow: hidden;
+}
+.p-visual__single--sub .first-block__bottom {
+  margin-bottom: 0;
+  margin: 0 10px 30px;
+  object-fit: contain;
+  object-position: center;
 }
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
