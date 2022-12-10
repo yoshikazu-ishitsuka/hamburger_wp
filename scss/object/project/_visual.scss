@@ -152,6 +152,62 @@
         }
       }
     }
+
+    &--sub {
+      margin-right: 20px;
+      margin-left: 20px;
+
+      .first-block {
+        &__top--img {
+          margin-bottom: 30px;
+        }
+        &__middle01 {
+          // height: 176px;
+          height: 15rem;
+          display: flex;
+          margin-bottom: 30px;
+
+          &--img {
+            // width: 50%;
+            height: 60%;
+            margin-right: 10px;
+            margin-bottom: 40px;
+          }
+
+          &--text {
+            text-indent: 10px;
+            line-height: 26px;
+            overflow: hidden;
+          }
+        }
+
+        &__middle02 {
+          // height: 176px;
+          height: 15rem;
+          display: flex;
+          margin-bottom: 30px;
+
+          &--img {
+            height: 60%;
+            margin-left: 9px;
+            margin-bottom: 40px;
+          }
+
+          &--text {
+            text-indent: 10px;
+            line-height: 26px;
+            overflow: hidden;
+          }
+        }
+
+        &__bottom {
+          margin-bottom: 0;
+          margin: 0 10px 30px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
   }
 
   // singleページの終わり
