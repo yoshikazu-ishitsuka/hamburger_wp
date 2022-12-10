@@ -159,6 +159,10 @@
 
       .first-block {
         &__top--img {
+          width: 29rem;
+          height: 174px;
+          object-fit: cover;
+          object-position: center -7rem;
           margin-bottom: 30px;
         }
         &__middle01 {
@@ -202,7 +206,7 @@
 
         &__bottom {
           margin-bottom: 0;
-          margin: 0 10px 30px;
+          margin: 0 34px 30px;
           object-fit: contain;
           object-position: center;
         }

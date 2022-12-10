@@ -838,6 +838,10 @@ ul {
   margin-left: 20px;
 }
 .p-visual__single--sub .first-block__top--img {
+  width: 29rem;
+  height: 174px;
+  object-fit: cover;
+  object-position: center -7rem;
   margin-bottom: 30px;
 }
 .p-visual__single--sub .first-block__middle01 {
@@ -872,7 +876,7 @@ ul {
 }
 .p-visual__single--sub .first-block__bottom {
   margin-bottom: 0;
-  margin: 0 10px 30px;
+  margin: 0 34px 30px;
   object-fit: contain;
   object-position: center;
 }
