@@ -211,6 +211,16 @@
           object-position: center;
         }
       }
+
+      .second-block {
+        text-align: center;
+
+        &--img {
+          display: inline-block;
+          width: 29rem;
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 

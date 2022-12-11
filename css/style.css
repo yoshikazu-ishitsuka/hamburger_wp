@@ -880,6 +880,14 @@ ul {
   object-fit: contain;
   object-position: center;
 }
+.p-visual__single--sub .second-block {
+  text-align: center;
+}
+.p-visual__single--sub .second-block--img {
+  display: inline-block;
+  width: 29rem;
+  margin-bottom: 30px;
+}
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
   background-size: cover;
