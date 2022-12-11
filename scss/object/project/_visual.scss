@@ -222,6 +222,39 @@
         }
       }
     }
+
+    &--list {
+      font-size: 16px;
+      font-weight: normal;
+      font-family: "M PLUS 1p", sans-serif;
+      line-height: 1.4375;
+      margin-right: 20px;
+      margin-left: 20px;
+
+      .list-group--01,
+      .list-group--02,
+      .list-group--04,
+      .list-group--05 {
+        margin-bottom: 20px;
+      }
+
+      .list-group--02,
+      .list-group--05 {
+        margin-left: 18px;
+      }
+
+      .list-group--03 {
+        margin-bottom: 60px;
+      }
+
+      .list-group--06 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--code {
+      background-color: #f5f5f5;
+    }
   }
 
   // singleページの終わり

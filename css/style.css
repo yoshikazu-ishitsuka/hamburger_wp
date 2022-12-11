@@ -888,6 +888,33 @@ ul {
   width: 29rem;
   margin-bottom: 30px;
 }
+.p-visual__single--list {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "M PLUS 1p", sans-serif;
+  line-height: 1.4375;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.p-visual__single--list .list-group--01,
+.p-visual__single--list .list-group--02,
+.p-visual__single--list .list-group--04,
+.p-visual__single--list .list-group--05 {
+  margin-bottom: 20px;
+}
+.p-visual__single--list .list-group--02,
+.p-visual__single--list .list-group--05 {
+  margin-left: 18px;
+}
+.p-visual__single--list .list-group--03 {
+  margin-bottom: 60px;
+}
+.p-visual__single--list .list-group--06 {
+  margin-bottom: 30px;
+}
+.p-visual__single--code {
+  background-color: #f5f5f5;
+}
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);
   background-size: cover;
