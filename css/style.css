@@ -661,6 +661,11 @@ ul {
   font-family: "M PLUS 1p", sans-serif;
 }
 
+.c-text--base {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "M PLUS 1p", sans-serif;
+}
 .c-text--sub {
   font-size: 16px;
 }
@@ -914,6 +919,32 @@ ul {
 }
 .p-visual__single--code {
   background-color: #f5f5f5;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.p-visual__single--code code {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.p-visual__single--table {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.p-visual__single--table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.p-visual__single--table table tr td {
+  border: solid 1px #707070;
+  padding: 28px 0 27px 30px;
+}
+.p-visual__single--table table tr td:first-of-type {
+  padding-right: 41px;
+}
+.p-visual__single--table table tr td:last-of-type {
+  padding-right: 106px;
 }
 .p-visual--main {
   background-image: url(/images/front/main-visual-pc.png);

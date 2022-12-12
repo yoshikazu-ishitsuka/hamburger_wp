@@ -254,6 +254,40 @@
 
     &--code {
       background-color: #f5f5f5;
+      margin-right: 20px;
+      margin-left: 20px;
+
+      code {
+        font-size: 16px;
+        font-weight: normal;
+        font-family: "M PLUS 1p", sans-serif;
+      }
+    }
+
+    &--table {
+      margin-right: 20px;
+      margin-left: 20px;
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 30px;
+
+        tr {
+          td {
+            border: solid 1px #707070;
+            padding: 28px 0 27px 30px;
+          }
+
+          td:first-of-type {
+            padding-right: 41px;
+          }
+
+          td:last-of-type {
+            padding-right: 106px;
+          }
+        }
+      }
     }
   }
 
