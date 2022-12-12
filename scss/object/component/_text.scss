@@ -2,6 +2,12 @@
 @use "../../foundation/global" as g;
 
 .c-text {
+  &--base {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "M PLUS 1p", sans-serif;
+  }
+
   &--sub {
     font-size: 16px;
   }
