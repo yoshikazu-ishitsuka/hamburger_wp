@@ -46,6 +46,11 @@
 
     .c-title--main {
       padding: 91px 39px 91px 26px;
+
+      // ブレークポイント（タブレット）
+      @include g.mq(sp) {
+        margin-left: 40px;
+      }
     }
   }
 
