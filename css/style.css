@@ -283,6 +283,11 @@ ul {
 .l-main .p-visual__single--main .c-title--main {
   padding: 91px 39px 91px 26px;
 }
+@media screen and (min-width: 600px) {
+  .l-main .p-visual__single--main .c-title--main {
+    margin-left: 40px;
+  }
+}
 .l-main .p-visual--sub {
   list-style: none;
   width: 100%;
@@ -806,10 +811,13 @@ ul {
 }
 .p-visual__single--main {
   background-image: url(/images/single/top_02.png);
-  background-size: 43rem;
-  background-position: center 40%;
+  background-size: 56rem;
+  background-position: center 37%;
   background-repeat: no-repeat;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  height: 285px;
 }
 .p-visual__single--sentence {
   margin-right: 20px;

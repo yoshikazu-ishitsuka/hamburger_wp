@@ -96,13 +96,19 @@
   &__single {
     &--main {
       background-image: url(/images/single/top_02.png);
-      background-size: 43rem;
-      background-position: center 40%;
+      background-size: 56rem;
+      background-position: center 37%;
       background-repeat: no-repeat;
       margin-bottom: 30px;
-      // display: flex;
-      // align-items: center;
+      display: flex;
+      align-items: center;
+      height: 285px;
       // position: relative;
+
+      // ブレークポイント（タブレット）
+      @include g.mq(sp) {
+        // margin-left: 86px;
+      }
     }
 
     &--sentence {
