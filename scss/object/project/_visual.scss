@@ -3,7 +3,7 @@
 
 // main内の画像関連についての設定
 .p-visual {
-  // archiveページの始まり
+  // archiveページの始まり //
   &__archive {
     &--main {
       background-image: url(/images/common/top_01.png);
@@ -90,9 +90,9 @@
       }
     }
   }
-  // archiveページの終わり
+  // archiveページの終わり //
 
-  // singleページの始まり
+  // singleページの始まり //
   &__single {
     &--main {
       background-image: url(/images/single/top_02.png);
@@ -103,12 +103,6 @@
       display: flex;
       align-items: center;
       height: 285px;
-      // position: relative;
-
-      // ブレークポイント（タブレット）
-      @include g.mq(sp) {
-        // margin-left: 86px;
-      }
     }
 
     &--sentence {
@@ -220,44 +214,44 @@
 
       .first-block {
         &__top--img {
-          // width: 29rem;
-          // height: 174px;
           width: 100%;
+          height: 11.5rem;
           object-fit: cover;
-          // object-position: center -7rem;
+          object-position: bottom;
           margin-bottom: 30px;
 
-          // ブレークポイント（タブレット）
-          @include g.mq(tab) {
+          // ブレークポイント（スマートフォン）
+          @include g.mq(sp) {
+            height: g.rem(264);
             margin-bottom: 60px;
           }
         }
 
         &__middle01 {
-          // height: 176px;
-          height: 15rem;
           display: flex;
           margin-bottom: 30px;
 
           // ブレークポイント（タブレット）
           @include g.mq(tab) {
-            height: 20rem;
+            margin-bottom: 117px;
           }
 
           &--img {
-            // width: 50%;
-            height: 60%;
+            height: 10rem;
             margin-right: 10px;
-            margin-bottom: 40px;
 
             // ブレークポイント（タブレット）
             @include g.mq(tab) {
+              width: 43%;
+              object-fit: cover;
+              object-position: bottom;
               margin-right: 21px;
             }
           }
 
           &--text {
             height: auto;
+            width: 54vw;
             text-indent: 10px;
             line-height: 26px;
             overflow: hidden;
@@ -265,18 +259,30 @@
         }
 
         &__middle02 {
-          // height: 176px;
-          height: 15rem;
           display: flex;
           margin-bottom: 30px;
 
+          // ブレークポイント（タブレット）
+          @include g.mq(tab) {
+            margin-bottom: 61px;
+          }
+
           &--img {
-            height: 60%;
+            height: 10rem;
             margin-left: 9px;
-            margin-bottom: 40px;
+
+            // ブレークポイント（タブレット）
+            @include g.mq(tab) {
+              width: 43%;
+              object-fit: cover;
+              object-position: bottom;
+              margin-left: 21px;
+            }
           }
 
           &--text {
+            height: auto;
+            width: 54vw;
             text-indent: 10px;
             line-height: 26px;
             overflow: hidden;
@@ -288,16 +294,48 @@
           margin: 0 34px 30px;
           object-fit: contain;
           object-position: center;
+
+          // ブレークポイント（タブレット）
+          @include g.mq(tab) {
+            margin-right: 126px;
+            margin-left: 127px;
+            margin-bottom: 241px;
+          }
         }
       }
 
       .second-block {
         text-align: center;
 
+        // ブレークポイント（タブレット）
+        @include g.mq(tab) {
+          display: grid;
+          grid-template-rows: 205px 205px 205px 205px 205px;
+          grid-template-columns: 322.5px 1fr;
+          column-gap: 16px;
+          row-gap: 20px;
+          margin-bottom: 62px;
+        }
+
         &--img {
           display: inline-block;
-          width: 29rem;
-          margin-bottom: 30px;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 20px;
+
+          // ブレークポイント（タブレット）
+          @include g.mq(tab) {
+            margin: 0;
+          }
+        }
+
+        &--img:last-of-type {
+          margin-bottom: 32px;
+
+          // ブレークポイント（タブレット）
+          @include g.mq(tab) {
+            margin: 0;
+          }
         }
       }
     }
@@ -309,6 +347,11 @@
       line-height: 1.4375;
       margin-right: 20px;
       margin-left: 20px;
+
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        margin-left: 110px;
+      }
 
       .list-group--01,
       .list-group--02,
@@ -328,6 +371,11 @@
 
       .list-group--06 {
         margin-bottom: 30px;
+
+        // ブレークポイント（タブレット）
+        @include g.mq(tab) {
+          margin-bottom: 60px;
+        }
       }
     }
 
@@ -335,6 +383,21 @@
       background-color: #f5f5f5;
       margin-right: 20px;
       margin-left: 20px;
+      margin-bottom: 30px;
+
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        margin-right: 60px;
+        margin-left: 61px;
+        margin-bottom: 60px;
+      }
+
+      pre {
+        // ブレークポイント（タブレット）
+        @include g.mq(tab) {
+          padding-right: 69px;
+        }
+      }
 
       code {
         font-size: 16px;
@@ -347,12 +410,20 @@
       margin-right: 20px;
       margin-left: 20px;
 
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        margin: 60px;
+        margin-top: auto;
+      }
+
       table {
         border-collapse: collapse;
         width: 100%;
         margin-bottom: 30px;
 
         tr {
+          background-color: #fff;
+
           td {
             border: solid 1px #707070;
             padding: 28px 0 27px 30px;
@@ -371,6 +442,13 @@
 
     &--button {
       margin: auto 20px 30px;
+
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        width: 51%;
+        margin-left: 60px;
+        margin-bottom: 60px;
+      }
     }
 
     &--bold {
@@ -379,11 +457,17 @@
       font-family: "M PLUS 1p", sans-serif;
       margin-left: 20px;
       margin-bottom: 177px;
+
+      // ブレークポイント（タブレット）
+      @include g.mq(tab) {
+        margin-left: 60px;
+        margin-bottom: 228px;
+      }
     }
   }
+  // singleページの終わり //
 
-  // singleページの終わり
-
+  // front-page-mainの始まり //
   &--main {
     background-image: url(/images/front/main-visual-pc.png);
     background-size: cover;
@@ -403,7 +487,9 @@
       margin-bottom: 120px;
     }
   }
+  // front-page-mainの終わり //
 
+  // front-page-subの始まり //
   &--sub {
     // ブレークポイント（タブレット）
     @include g.mq(tab) {
@@ -543,4 +629,5 @@
       }
     }
   }
+  // front-page-subの終わり //
 }
