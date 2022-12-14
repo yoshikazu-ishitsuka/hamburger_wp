@@ -103,6 +103,17 @@
       display: flex;
       align-items: center;
       height: 285px;
+
+      @include g.mq(tab) {
+        background-size: cover;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        height: 500px;
+        background-size: cover;
+        margin-bottom: 60px;
+      }
     }
 
     &--sentence {
@@ -113,6 +124,12 @@
       @include g.mq(tab) {
         margin-right: 60px;
         margin-left: 60px;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        margin-right: 100px;
+        margin-left: 100px;
       }
 
       .c-title__single--h2 {
@@ -179,6 +196,11 @@
           @include g.mq(tab) {
             padding: 50px 56px 60px 50px;
           }
+
+          // ブレークポイント（PC）
+          @include g.mq(pc) {
+            padding-right: 60px;
+          }
         }
 
         .citation--single {
@@ -192,6 +214,11 @@
           @include g.mq(tab) {
             padding-left: 50px;
             padding-bottom: 60px;
+          }
+
+          // ブレークポイント（PC）
+          @include g.mq(pc) {
+            padding-bottom: 50px;
           }
 
           .citation-link {
@@ -212,6 +239,12 @@
         margin-left: 60px;
       }
 
+      // ブレークポイント（1280px）
+      @media (min-width: 1280px) {
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+
       .first-block {
         &__top--img {
           width: 100%;
@@ -222,8 +255,13 @@
 
           // ブレークポイント（スマートフォン）
           @include g.mq(sp) {
-            height: g.rem(264);
+            height: 20.5rem;
             margin-bottom: 60px;
+          }
+
+          // ブレークポイント（PC）
+          @include g.mq(pc) {
+            height: g.rem(400);
           }
         }
 
@@ -236,9 +274,21 @@
             margin-bottom: 117px;
           }
 
+          // ブレークポイント（1280px）
+          @media (min-width: 1280px) {
+            display: grid;
+            grid-template-rows: 191px 167px;
+            grid-template-columns: 581px 1fr;
+            column-gap: 40px;
+            // grid-template-columns: 43% 54%;
+          }
+
           &--img {
-            height: 10rem;
+            height: 6rem;
             margin-right: 10px;
+            // width: 43%;
+            // object-fit: cover;
+            // object-position: bottom;
 
             // ブレークポイント（タブレット）
             @include g.mq(tab) {
@@ -247,14 +297,33 @@
               object-position: bottom;
               margin-right: 21px;
             }
+
+            // ブレークポイント（1280px）
+            @media (min-width: 1280px) {
+              margin: 0;
+              grid-row: 1/3;
+              grid-column: 1;
+              height: 100%;
+              width: auto;
+              object-fit: contain;
+              object-position: top;
+            }
           }
 
           &--text {
             height: auto;
-            width: 54vw;
+            // width: 54vw;
             text-indent: 10px;
             line-height: 26px;
             overflow: hidden;
+
+            // ブレークポイント（1280px）
+            @media (min-width: 1280px) {
+              width: auto;
+              line-height: 27px;
+              grid-row: 1;
+              grid-column: 2;
+            }
           }
         }
 
@@ -264,7 +333,15 @@
 
           // ブレークポイント（タブレット）
           @include g.mq(tab) {
-            margin-bottom: 61px;
+            margin-bottom: 60px;
+          }
+
+          // ブレークポイント（1280px）
+          @media (min-width: 1280px) {
+            display: grid;
+            grid-template-rows: 191px 167px;
+            grid-template-columns: 1fr 581px;
+            column-gap: 40px;
           }
 
           &--img {
@@ -278,6 +355,17 @@
               object-position: bottom;
               margin-left: 21px;
             }
+
+            // ブレークポイント（1280px）
+            @media (min-width: 1280px) {
+              margin: 0;
+              grid-row: 1/3;
+              grid-column: 2;
+              height: 100%;
+              width: auto;
+              object-fit: contain;
+              object-position: top;
+            }
           }
 
           &--text {
@@ -286,6 +374,16 @@
             text-indent: 10px;
             line-height: 26px;
             overflow: hidden;
+
+            // ブレークポイント（1280px）
+            @media (min-width: 1280px) {
+              margin: 0;
+              grid-row: 1;
+              grid-column: 1;
+              height: 100%;
+              width: auto;
+              line-height: 27px;
+            }
           }
         }
 
@@ -301,6 +399,16 @@
             margin-left: 127px;
             margin-bottom: 241px;
           }
+
+          // ブレークポイント（PC）
+          // @include g.mq(pc) {
+          @media (min-width: 900px) {
+            margin-bottom: 60px;
+          }
+
+          &--img {
+            width: 100%;
+          }
         }
       }
 
@@ -310,11 +418,18 @@
         // ブレークポイント（タブレット）
         @include g.mq(tab) {
           display: grid;
-          grid-template-rows: 205px 205px 205px 205px 205px;
-          grid-template-columns: 322.5px 1fr;
+          grid-template-rows: repeat(5, 205px);
+          grid-template-columns: 1fr 1fr;
           column-gap: 16px;
           row-gap: 20px;
           margin-bottom: 62px;
+
+          @media (min-width: 900px) {
+            grid-template-rows: repeat(3, 170px);
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 20px;
+            margin-bottom: 53px;
+          }
         }
 
         &--img {
@@ -351,6 +466,11 @@
       // ブレークポイント（タブレット）
       @include g.mq(tab) {
         margin-left: 110px;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        margin-left: 150px;
       }
 
       .list-group--01,
@@ -392,6 +512,13 @@
         margin-bottom: 60px;
       }
 
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+      }
+
       pre {
         // ブレークポイント（タブレット）
         @include g.mq(tab) {
@@ -414,6 +541,12 @@
       @include g.mq(tab) {
         margin: 60px;
         margin-top: auto;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        margin-right: 100px;
+        margin-left: 100px;
       }
 
       table {
@@ -449,6 +582,12 @@
         margin-left: 60px;
         margin-bottom: 60px;
       }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        margin-right: 100px;
+        margin-left: 100px;
+      }
     }
 
     &--bold {
@@ -462,6 +601,13 @@
       @include g.mq(tab) {
         margin-left: 60px;
         margin-bottom: 228px;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 353px;
       }
     }
   }
