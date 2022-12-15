@@ -281,14 +281,17 @@ ul {
     padding-left: 86px;
   }
 }
-.l-main .p-visual__single--main {
+.l-main .p-visual__single--main,
+.l-main .p-visual__page--main {
   grid-area: mainTop;
 }
-.l-main .p-visual__single--main .c-title--main {
+.l-main .p-visual__single--main .c-title--main,
+.l-main .p-visual__page--main .c-title--main {
   padding: 91px 39px 91px 26px;
 }
 @media screen and (min-width: 600px) {
-  .l-main .p-visual__single--main .c-title--main {
+  .l-main .p-visual__single--main .c-title--main,
+.l-main .p-visual__page--main .c-title--main {
     margin-left: 40px;
   }
 }
@@ -1326,6 +1329,33 @@ ul {
     margin-right: 100px;
     margin-left: 100px;
     margin-bottom: 353px;
+  }
+}
+.p-visual__page--main {
+  background-image: url(/images/shop/shop.png);
+  background-size: 56rem;
+  background-position: center 37%;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  height: 285px;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__page--main {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-visual__page--main {
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 373px) {
+  .p-visual__page--main .c-title--main {
+    font-size: 29px;
   }
 }
 .p-visual--main {

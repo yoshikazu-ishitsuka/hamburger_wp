@@ -663,6 +663,36 @@
   }
   // singleページの終わり //
 
+  &__page {
+    &--main {
+      background-image: url(/images/shop/shop.png);
+      background-size: 56rem;
+      background-position: center 37%;
+      background-repeat: no-repeat;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      height: 285px;
+
+      @include g.mq(tab) {
+        background-size: cover;
+      }
+
+      // ブレークポイント（PC）
+      @include g.mq(pc) {
+        height: 500px;
+        background-size: cover;
+        margin-bottom: 60px;
+      }
+
+      .c-title--main {
+        @media (max-width: 373px) {
+          font-size: 29px;
+        }
+      }
+    }
+  }
+
   // front-page-mainの始まり //
   &--main {
     background-image: url(/images/front/main-visual-pc.png);
