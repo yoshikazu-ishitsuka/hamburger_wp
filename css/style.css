@@ -574,7 +574,7 @@ ul {
 }
 @media screen and (min-width: 1025px) {
   .c-title--main {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 .c-title--sub {
@@ -835,6 +835,11 @@ ul {
     margin-bottom: 60px;
   }
 }
+@media (max-width: 373px) {
+  .p-visual__single--main .c-title--main {
+    font-size: 29px;
+  }
+}
 .p-visual__single--sentence {
   margin-right: 20px;
   margin-left: 20px;
@@ -994,9 +999,24 @@ ul {
   height: 6rem;
   margin-right: 10px;
 }
+@media (min-width: 500px) {
+  .p-visual__single--sub .first-block__middle01--img {
+    height: 7rem;
+  }
+}
+@media (min-width: 600px) {
+  .p-visual__single--sub .first-block__middle01--img {
+    height: 8rem;
+  }
+}
+@media (min-width: 700px) {
+  .p-visual__single--sub .first-block__middle01--img {
+    height: 10rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .p-visual__single--sub .first-block__middle01--img {
-    width: 43%;
+    width: 43vw;
     object-fit: cover;
     object-position: bottom;
     margin-right: 21px;
@@ -1018,6 +1038,11 @@ ul {
   text-indent: 10px;
   line-height: 26px;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__single--sub .first-block__middle01--text {
+    width: 54vw;
+  }
 }
 @media (min-width: 1280px) {
   .p-visual__single--sub .first-block__middle01--text {
@@ -1045,12 +1070,27 @@ ul {
   }
 }
 .p-visual__single--sub .first-block__middle02--img {
-  height: 10rem;
+  height: 6rem;
   margin-left: 9px;
+}
+@media (min-width: 500px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    height: 7rem;
+  }
+}
+@media (min-width: 600px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    height: 8rem;
+  }
+}
+@media (min-width: 700px) {
+  .p-visual__single--sub .first-block__middle02--img {
+    height: 10rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .p-visual__single--sub .first-block__middle02--img {
-    width: 43%;
+    width: 43vw;
     object-fit: cover;
     object-position: bottom;
     margin-left: 21px;
@@ -1069,10 +1109,14 @@ ul {
 }
 .p-visual__single--sub .first-block__middle02--text {
   height: auto;
-  width: 54vw;
   text-indent: 10px;
   line-height: 26px;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .p-visual__single--sub .first-block__middle02--text {
+    width: 54vw;
+  }
 }
 @media (min-width: 1280px) {
   .p-visual__single--sub .first-block__middle02--text {
