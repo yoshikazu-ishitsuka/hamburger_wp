@@ -41,7 +41,8 @@
   }
 
   // singleページ
-  .p-visual__single--main {
+  .p-visual__single--main,
+  .p-visual__page--main {
     grid-area: mainTop;
 
     .c-title--main {
